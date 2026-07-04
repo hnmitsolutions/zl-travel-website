@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies (not needed for this static site, but ignored just in case)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Vercel
+.vercel/
+
+# Logs & env
+*.log
+.env
+.env.*
+
+# Python / tooling artifacts (from local screenshot tooling)
+__pycache__/
+*.pyc
+.cache/
