@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Agent Form — Cavlovic Platinum Travel Co.</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #FDFAF5;
+  color: #1A0D05;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+:root {
+  --espresso: #1A0D05;
+  --gold: #C9A04A;
+  --gold-light: #E8C97A;
+  --champagne: #F0E2C4;
+  --ivory: #FDFAF5;
+  --brown-mid: #5C4A38;
+  --border: #E0D4BE;
+}
+h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; line-height: 1.2; }
+h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); }
+h2 { font-size: clamp(1.35rem, 3vw, 1.75rem); }
+h3 { font-size: 1.1rem; color: var(--espresso); }
+p { font-size: 14px; color: var(--brown-mid); }
+.eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.gold-rule { width: 48px; height: 2px; background: var(--gold); margin: 10px 0 18px; }
+.gold-rule.center { margin: 10px auto 18px; }
+.text-center { text-align: center; }
+
+.top-bar {
+  background: var(--espresso);
+  border-bottom: 1px solid rgba(201, 160, 74, 0.2);
+  padding: 18px 24px;
+}
+.top-bar-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.top-bar img {
+  height: 48px;
+  width: 48px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  border: 1.5px solid var(--gold);
+}
+.top-bar-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--champagne);
+}
+.top-bar-sub {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.page-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 20px 72px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 32px 28px;
+}
+.card h1, .card h2 { color: var(--espresso); margin-bottom: 6px; }
+.card > p { margin-bottom: 20px; }
+
+.pin-input {
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto 16px;
+  display: block;
+  padding: 14px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 4px;
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  outline: none;
+}
+.pin-input:focus { border-color: var(--gold); }
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--espresso);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 13px 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover { background: var(--gold-light); }
+.btn-primary:disabled { opacity: 0.55; cursor: not-allowed; }
+.btn-block { width: 100%; }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--gold);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 10px 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.btn-ghost:hover { color: var(--espresso); }
+
+.form-section {
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+.form-section:last-of-type { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
+
+.form-group { margin-bottom: 14px; }
+.form-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--espresso);
+  margin-bottom: 5px;
+}
+.form-label .req { color: #b45309; }
+.form-input, .form-textarea {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--espresso);
+  background: #fff;
+  outline: none;
+}
+.form-input:focus, .form-textarea:focus { border-color: var(--gold); }
+.form-textarea { min-height: 80px; resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.package-block {
+  background: var(--ivory);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 18px 16px 6px;
+  margin-bottom: 14px;
+}
+.package-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  gap: 12px;
+}
+.package-head h3 { margin: 0; font-size: 1rem; }
+
+.add-package-wrap {
+  margin: 8px 0 20px;
+  text-align: center;
+}
+
+.package-note {
+  background: var(--champagne);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+  font-size: 12px;
+  color: var(--brown-mid);
+  line-height: 1.55;
+}
+.package-note strong { color: var(--espresso); }
+.package-note.max-reached {
+  background: rgba(201, 160, 74, 0.1);
+  border-color: rgba(201, 160, 74, 0.35);
+  color: var(--espresso);
+}
+.package-count {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.alert {
+  display: none;
+  padding: 12px 14px;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.alert.show { display: block; }
+.alert-error { background: #fff0f0; border: 1px solid #e05252; color: #b91c1c; }
+.alert-success { background: #f0faf4; border: 1px solid #6abf8a; color: #1d6b3a; }
+
+.agent-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(201, 160, 74, 0.1);
+  border: 1px solid rgba(201, 160, 74, 0.3);
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 12px;
+}
+
+.hidden { display: none !important; }
+
+.card-details-block {
+  background: #fff;
+  border: 1px dashed rgba(201, 160, 74, 0.45);
+  border-radius: 6px;
+  padding: 14px 14px 4px;
+  margin-top: 4px;
+}
+.card-details-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--espresso);
+  margin-bottom: 4px;
+}
+.card-details-note {
+  font-size: 11px;
+  color: var(--brown-mid);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.form-select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--espresso);
+  background: #fff;
+  outline: none;
+}
+.form-select:focus { border-color: var(--gold); }
+
+.file-upload-wrap {
+  border: 1.5px dashed var(--border);
+  border-radius: 6px;
+  padding: 16px;
+  background: var(--ivory);
+}
+.file-upload-wrap input[type="file"] {
+  width: 100%;
+  font-size: 13px;
+}
+.file-hint {
+  font-size: 11px;
+  color: var(--brown-mid);
+  margin-top: 8px;
+  line-height: 1.5;
+}
+.file-status {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--espresso);
+}
+.file-status.error { color: #b91c1c; }
+.file-status.success { color: #1d6b3a; }
+
+.date-field {
+  display: flex;
+  align-items: stretch;
+}
+.date-field .date-input {
+  flex: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.date-picker-trigger {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background: var(--champagne);
+  cursor: pointer;
+  overflow: hidden;
+}
+.date-picker-trigger:hover { background: rgba(201, 160, 74, 0.28); }
+.date-picker-icon { font-size: 15px; line-height: 1; pointer-events: none; }
+.date-picker-native {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submit-wrap { margin-top: 28px; }
+
+@media (max-width: 560px) {
+  .card { padding: 24px 18px; }
+  .form-row { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="top-bar">
+  <div class="top-bar-inner">
+    <img src="/logo.png" alt="Cavlovic Platinum Travel Co." />
+    <div>
+      <div class="top-bar-title">Cavlovic Platinum Travel Co.</div>
+      <div class="top-bar-sub">Agent Form</div>
+    </div>
+  </div>
+</header>
+
+<main class="page-wrap">
+
+  <section id="pinGate" class="card text-center">
+    <p class="eyebrow">Private Access</p>
+    <h1>Agent Form</h1>
+    <div class="gold-rule center"></div>
+    <p>Enter your agent PIN to continue.</p>
+    <div id="pinError" class="alert alert-error" role="alert"></div>
+    <form id="pinForm" autocomplete="off">
+      <label class="form-label" for="agentPin" style="max-width:260px;margin:0 auto 6px;text-align:left;">PIN</label>
+      <input class="pin-input" type="password" id="agentPin" inputmode="numeric" maxlength="12" placeholder="••••" required autofocus />
+      <button type="submit" class="btn-primary btn-block" style="max-width:260px;margin:0 auto;">Continue</button>
+    </form>
+  </section>
+
+  <section id="agentFormSection" class="card hidden">
+    <span class="agent-badge">Agent Only</span>
+    <h2>Package Submission</h2>
+    <div class="gold-rule"></div>
+    <p>Enter client contact info and up to 3 package options.</p>
+
+    <div id="formError" class="alert alert-error" role="alert"></div>
+    <div id="formSuccess" class="alert alert-success" role="alert"></div>
+
+    <form id="agentForm" novalidate>
+
+      <!-- Client contact -->
+      <div class="form-section">
+        <p class="eyebrow">Client Contact</p>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="clientPhone">Phone <span class="req">*</span></label>
+            <input class="form-input" type="tel" id="clientPhone" required placeholder="(515) 461-6998" autocomplete="tel" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="clientEmail">Email <span class="req">*</span></label>
+            <input class="form-input" type="email" id="clientEmail" required placeholder="client@email.com" autocomplete="email" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Packages -->
+      <div class="form-section">
+        <p class="eyebrow">Package Details</p>
+        <div id="packageNote" class="package-note">
+          <p id="packageNoteText"><strong>Maximum 3 packages per submission.</strong> Package 1 is required. Use the buttons below to add Package 2 or Package 3 (optional).</p>
+          <div class="package-count" id="packageCount">1 of 3 packages</div>
+        </div>
+
+        <div class="package-block" data-package="1">
+          <div class="package-head">
+            <h3>Package 1</h3>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Package Name <span class="req">*</span></label>
+            <input class="form-input" type="text" data-field="package_name" required placeholder="e.g. Cancun All-Inclusive" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Travel Start Date</label>
+              <div class="date-field">
+                <input class="form-input date-input" type="text" data-field="travel_start_date" inputmode="numeric" maxlength="10" placeholder="MM-DD-YYYY" autocomplete="off" />
+                <label class="date-picker-trigger" aria-label="Open calendar">
+                  <span class="date-picker-icon" aria-hidden="true">📅</span>
+                  <input type="date" class="date-picker-native" tabindex="-1" />
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Travel End Date</label>
+              <div class="date-field">
+                <input class="form-input date-input" type="text" data-field="travel_end_date" inputmode="numeric" maxlength="10" placeholder="MM-DD-YYYY" autocomplete="off" />
+                <label class="date-picker-trigger" aria-label="Open calendar">
+                  <span class="date-picker-icon" aria-hidden="true">📅</span>
+                  <input type="date" class="date-picker-native" tabindex="-1" />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Hotel / Resort Name</label>
+            <input class="form-input" type="text" data-field="hotel_resort_name" placeholder="Property name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Room Type</label>
+            <input class="form-input" type="text" data-field="room_type" placeholder="e.g. Ocean View King" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Package Inclusions</label>
+            <textarea class="form-textarea" data-field="package_inclusions" placeholder="Flights, transfers, meals, excursions…"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Total Investment</label>
+              <input class="form-input" type="text" data-field="total_investment" placeholder="$0.00" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Deposit Required</label>
+              <input class="form-input" type="text" data-field="deposit_required" placeholder="$0.00" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Package PDF</label>
+            <div class="file-upload-wrap">
+              <input type="file" data-field="package_pdf" accept=".pdf,application/pdf" />
+              <p class="file-hint">Optional. PDF only, max 25 MB. Uploads to GHL Media Storage on submit.</p>
+              <div class="file-status hidden" data-pdf-status aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="package2" class="package-block hidden" data-package="2">
+          <div class="package-head">
+            <h3>Package 2</h3>
+            <button type="button" class="btn-ghost" data-remove="2">Remove</button>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Package Name</label>
+            <input class="form-input" type="text" data-field="package_name" placeholder="Package name" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Travel Start Date</label>
+              <div class="date-field">
+                <input class="form-input date-input" type="text" data-field="travel_start_date" inputmode="numeric" maxlength="10" placeholder="MM-DD-YYYY" autocomplete="off" />
+                <label class="date-picker-trigger" aria-label="Open calendar">
+                  <span class="date-picker-icon" aria-hidden="true">📅</span>
+                  <input type="date" class="date-picker-native" tabindex="-1" />
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Travel End Date</label>
+              <div class="date-field">
+                <input class="form-input date-input" type="text" data-field="travel_end_date" inputmode="numeric" maxlength="10" placeholder="MM-DD-YYYY" autocomplete="off" />
+                <label class="date-picker-trigger" aria-label="Open calendar">
+                  <span class="date-picker-icon" aria-hidden="true">📅</span>
+                  <input type="date" class="date-picker-native" tabindex="-1" />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Hotel / Resort Name</label>
+            <input class="form-input" type="text" data-field="hotel_resort_name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Room Type</label>
+            <input class="form-input" type="text" data-field="room_type" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Package Inclusions</label>
+            <textarea class="form-textarea" data-field="package_inclusions"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Total Investment</label>
+              <input class="form-input" type="text" data-field="total_investment" placeholder="$0.00" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Deposit Required</label>
+              <input class="form-input" type="text" data-field="deposit_required" placeholder="$0.00" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Package PDF</label>
+            <div class="file-upload-wrap">
+              <input type="file" data-field="package_pdf" accept=".pdf,application/pdf" />
+              <p class="file-hint">Optional. PDF only, max 25 MB. Uploads to GHL Media Storage on submit.</p>
+              <div class="file-status hidden" data-pdf-status aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="package3" class="package-block hidden" data-package="3">
+          <div class="package-head">
+            <h3>Package 3</h3>
+            <button type="button" class="btn-ghost" data-remove="3">Remove</button>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Package Name</label>
+            <input class="form-input" type="text" data-field="package_name" placeholder="Package name" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Travel Start Date</label>
+              <div class="date-field">
+                <input class="form-input date-input" type="text" data-field="travel_start_date" inputmode="numeric" maxlength="10" placeholder="MM-DD-YYYY" autocomplete="off" />
+                <label class="date-picker-trigger" aria-label="Open calendar">
+                  <span class="date-picker-icon" aria-hidden="true">📅</span>
+                  <input type="date" class="date-picker-native" tabindex="-1" />
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Travel End Date</label>
+              <div class="date-field">
+                <input class="form-input date-input" type="text" data-field="travel_end_date" inputmode="numeric" maxlength="10" placeholder="MM-DD-YYYY" autocomplete="off" />
+                <label class="date-picker-trigger" aria-label="Open calendar">
+                  <span class="date-picker-icon" aria-hidden="true">📅</span>
+                  <input type="date" class="date-picker-native" tabindex="-1" />
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Hotel / Resort Name</label>
+            <input class="form-input" type="text" data-field="hotel_resort_name" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Room Type</label>
+            <input class="form-input" type="text" data-field="room_type" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Package Inclusions</label>
+            <textarea class="form-textarea" data-field="package_inclusions"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Total Investment</label>
+              <input class="form-input" type="text" data-field="total_investment" placeholder="$0.00" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Deposit Required</label>
+              <input class="form-input" type="text" data-field="deposit_required" placeholder="$0.00" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Package PDF</label>
+            <div class="file-upload-wrap">
+              <input type="file" data-field="package_pdf" accept=".pdf,application/pdf" />
+              <p class="file-hint">Optional. PDF only, max 25 MB. Uploads to GHL Media Storage on submit.</p>
+              <div class="file-status hidden" data-pdf-status aria-live="polite"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="add-package-wrap">
+          <button type="button" class="btn-ghost" id="addPackage2">+ Add Package 2</button>
+          <button type="button" class="btn-ghost hidden" id="addPackage3">+ Add Package 3</button>
+        </div>
+      </div>
+
+      <!-- Payment & booking -->
+      <div class="form-section">
+        <p class="eyebrow">Payment & Booking</p>
+        <div class="card-details-block">
+          <p class="card-details-label">Client Card Details</p>
+          <p class="card-details-note">Enter the client's payment card on file (agent use only). One card per submission.</p>
+          <div class="form-group">
+            <label class="form-label" for="cardholderName">Cardholder Name</label>
+            <input class="form-input" type="text" id="cardholderName" placeholder="Name on card" autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="cardNumber">Card Number</label>
+            <input class="form-input" type="text" id="cardNumber" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456" autocomplete="off" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="cardExpMonth">Exp. Month</label>
+              <select class="form-select" id="cardExpMonth">
+                <option value="">MM</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cardExpYear">Exp. Year</label>
+              <select class="form-select" id="cardExpYear">
+                <option value="">YYYY</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cardCvv">CVV</label>
+              <input class="form-input" type="password" id="cardCvv" inputmode="numeric" maxlength="4" placeholder="•••" autocomplete="off" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="billingZip">Billing ZIP</label>
+            <input class="form-input" type="text" id="billingZip" inputmode="numeric" maxlength="10" placeholder="ZIP / Postal code" autocomplete="off" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="finalPaymentDate">Final Payment Date</label>
+            <div class="date-field">
+              <input class="form-input date-input" type="text" id="finalPaymentDate" inputmode="numeric" maxlength="10" placeholder="MM-DD-YYYY" autocomplete="off" />
+              <label class="date-picker-trigger" aria-label="Open calendar">
+                <span class="date-picker-icon" aria-hidden="true">📅</span>
+                <input type="date" class="date-picker-native" tabindex="-1" />
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookingExpirationDate">Booking Expiration Date</label>
+            <div class="date-field">
+              <input class="form-input date-input" type="text" id="bookingExpirationDate" inputmode="numeric" maxlength="10" placeholder="MM-DD-YYYY" autocomplete="off" />
+              <label class="date-picker-trigger" aria-label="Open calendar">
+                <span class="date-picker-icon" aria-hidden="true">📅</span>
+                <input type="date" class="date-picker-native" tabindex="-1" />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="submit-wrap">
+        <button type="submit" class="btn-primary btn-block" id="agentSubmitBtn">Submit to GHL</button>
+      </div>
+    </form>
+  </section>
+
+</main>
+
+<script>
+(function () {
+  const AGENT_ID = 'cavlovic-platinum';
+  const AGENT_PIN = '4729';
+  const GHL_WEBHOOK = 'https://services.leadconnectorhq.com/hooks/9ucuzSNEUy0KAHIEVpxY/webhook-trigger/3f9eddcf-0b75-4f17-ac57-5d4c954249e8';
+  const GHL_MEDIA_UPLOAD = 'https://services.leadconnectorhq.com/medias/upload-file';
+  const GHL_MEDIA_TOKEN = 'pit-a935af07-953c-423f-aeee-8af05acd1b43';
+  const SESSION_KEY = 'cavlovic_agent_unlocked_' + AGENT_ID;
+  const MAX_PACKAGES = 3;
+  const MAX_PDF_BYTES = 25 * 1024 * 1024;
+
+  const PACKAGE_FIELDS = [
+    'package_name',
+    'travel_start_date',
+    'travel_end_date',
+    'hotel_resort_name',
+    'room_type',
+    'package_inclusions',
+    'total_investment',
+    'deposit_required'
+  ];
+
+  const CARD_FIELDS = [
+    'cardholder_name',
+    'card_number',
+    'card_exp_month',
+    'card_exp_year',
+    'card_cvv',
+    'billing_zip'
+  ];
+
+  const DATE_FIELDS = ['travel_start_date', 'travel_end_date'];
+
+  function parseMMDDYYYY(dateStr) {
+    if (!dateStr || !String(dateStr).trim()) return null;
+    const match = String(dateStr).trim().match(/^(\d{1,2})-(\d{1,2})-(\d{4})$/);
+    if (!match) return null;
+    const m = parseInt(match[1], 10);
+    const d = parseInt(match[2], 10);
+    const y = parseInt(match[3], 10);
+    if (m < 1 || m > 12 || d < 1 || d > 31 || y < 1900) return null;
+    const dt = new Date(y, m - 1, d);
+    if (dt.getFullYear() !== y || dt.getMonth() !== m - 1 || dt.getDate() !== d) return null;
+    return {
+      y: y,
+      m: m,
+      d: d,
+      sortKey: y + '-' + String(m).padStart(2, '0') + '-' + String(d).padStart(2, '0')
+    };
+  }
+
+  function normalizeDateMMDDYYYY(dateStr) {
+    const parsed = parseMMDDYYYY(dateStr);
+    if (!parsed) return String(dateStr || '').trim();
+    return String(parsed.m).padStart(2, '0') + '-' + String(parsed.d).padStart(2, '0') + '-' + parsed.y;
+  }
+
+  function formatDateInputMask(value) {
+    const digits = String(value || '').replace(/\D/g, '').slice(0, 8);
+    if (digits.length <= 2) return digits;
+    if (digits.length <= 4) return digits.slice(0, 2) + '-' + digits.slice(2);
+    return digits.slice(0, 2) + '-' + digits.slice(2, 4) + '-' + digits.slice(4);
+  }
+
+  function compareMMDDYYYY(a, b) {
+    const pa = parseMMDDYYYY(a);
+    const pb = parseMMDDYYYY(b);
+    if (!pa || !pb) return 0;
+    if (pa.sortKey < pb.sortKey) return -1;
+    if (pa.sortKey > pb.sortKey) return 1;
+    return 0;
+  }
+
+  function validateDateValue(value, label) {
+    if (!String(value || '').trim()) return null;
+    if (!parseMMDDYYYY(value)) return label + ': use MM-DD-YYYY format (e.g. 06-29-2026).';
+    return null;
+  }
+
+  function formatPackageDates(pkg) {
+    const formatted = Object.assign({}, pkg);
+    DATE_FIELDS.forEach(function (field) {
+      if (formatted[field]) {
+        formatted[field] = normalizeDateMMDDYYYY(formatted[field]);
+      }
+    });
+    return formatted;
+  }
+
+  function isoToMMDDYYYY(isoDateStr) {
+    if (!isoDateStr) return '';
+    const parts = isoDateStr.split('-');
+    if (parts.length !== 3) return '';
+    return parts[1] + '-' + parts[2] + '-' + parts[0];
+  }
+
+  function parsedToISO(parsed) {
+    return parsed.y + '-' + String(parsed.m).padStart(2, '0') + '-' + String(parsed.d).padStart(2, '0');
+  }
+
+  function initDateInputs() {
+    document.querySelectorAll('.date-field').forEach(function (wrap) {
+      const textInput = wrap.querySelector('.date-input');
+      const nativeInput = wrap.querySelector('.date-picker-native');
+      if (!textInput || !nativeInput) return;
+
+      textInput.addEventListener('input', function () {
+        const start = textInput.selectionStart;
+        const before = textInput.value.length;
+        textInput.value = formatDateInputMask(textInput.value);
+        const after = textInput.value.length;
+        const next = Math.max(0, (start || 0) + (after - before));
+        textInput.setSelectionRange(next, next);
+      });
+
+      textInput.addEventListener('blur', function () {
+        if (textInput.value.trim()) {
+          textInput.value = normalizeDateMMDDYYYY(textInput.value);
+        }
+      });
+
+      nativeInput.addEventListener('change', function () {
+        if (!nativeInput.value) return;
+        textInput.value = normalizeDateMMDDYYYY(isoToMMDDYYYY(nativeInput.value));
+      });
+
+      nativeInput.addEventListener('click', function () {
+        const parsed = parseMMDDYYYY(textInput.value);
+        if (parsed) nativeInput.value = parsedToISO(parsed);
+      });
+    });
+  }
+
+  const $pinGate = document.getElementById('pinGate');
+  const $pinForm = document.getElementById('pinForm');
+  const $pinInput = document.getElementById('agentPin');
+  const $pinError = document.getElementById('pinError');
+  const $formSection = document.getElementById('agentFormSection');
+  const $agentForm = document.getElementById('agentForm');
+  const $formError = document.getElementById('formError');
+  const $formSuccess = document.getElementById('formSuccess');
+  const $submitBtn = document.getElementById('agentSubmitBtn');
+  const $addPkg2 = document.getElementById('addPackage2');
+  const $addPkg3 = document.getElementById('addPackage3');
+  const $pkg2 = document.getElementById('package2');
+  const $pkg3 = document.getElementById('package3');
+  const $packageNote = document.getElementById('packageNote');
+  const $packageNoteText = document.getElementById('packageNoteText');
+  const $packageCount = document.getElementById('packageCount');
+
+  function setBlockPdfStatus(block, msg, type) {
+    const el = block.querySelector('[data-pdf-status]');
+    if (!el) return;
+    el.textContent = msg;
+    el.className = 'file-status ' + (type || '');
+    el.classList.toggle('hidden', !msg);
+  }
+
+  function clearBlockPdfStatus(block) {
+    setBlockPdfStatus(block, '', '');
+  }
+
+  function getPackagePdfFile(block) {
+    const input = block.querySelector('[data-field="package_pdf"]');
+    return input && input.files && input.files[0] ? input.files[0] : null;
+  }
+
+  function validatePdfFile(file, block, num) {
+    if (!file) return null;
+    if (file.type !== 'application/pdf' && !file.name.toLowerCase().endsWith('.pdf')) {
+      const input = block.querySelector('[data-field="package_pdf"]');
+      if (input) input.value = '';
+      setBlockPdfStatus(block, 'Please choose a PDF file.', 'error');
+      return 'Package ' + num + ': only PDF files are allowed.';
+    }
+    if (file.size > MAX_PDF_BYTES) {
+      const input = block.querySelector('[data-field="package_pdf"]');
+      if (input) input.value = '';
+      setBlockPdfStatus(block, 'PDF must be 25 MB or smaller.', 'error');
+      return 'Package ' + num + ': PDF must be 25 MB or smaller.';
+    }
+    setBlockPdfStatus(block, 'Ready: ' + file.name, 'success');
+    return null;
+  }
+
+  async function uploadPdfToGHL(file) {
+    const formData = new FormData();
+    formData.append('file', file);
+    formData.append('name', file.name);
+    formData.append('hosted', 'false');
+
+    const res = await fetch(GHL_MEDIA_UPLOAD, {
+      method: 'POST',
+      headers: {
+        Authorization: 'Bearer ' + GHL_MEDIA_TOKEN,
+        Version: '2021-07-28',
+        Accept: 'application/json'
+      },
+      body: formData
+    });
+
+    const data = await res.json().catch(function () { return {}; });
+    if (!res.ok) {
+      throw new Error(data.message || data.error || data.status || 'PDF upload failed (HTTP ' + res.status + ').');
+    }
+
+    const url = data.url || data.fileUrl || (data.file && data.file.url) || (data.meta && data.meta.url) || '';
+    const fileId = data.fileId || data.id || (data.file && data.file.id) || '';
+
+    if (!url) {
+      throw new Error('PDF uploaded but no file link was returned from GHL.');
+    }
+
+    return {
+      fileId: fileId,
+      url: url,
+      link: url,
+      name: file.name
+    };
+  }
+
+  async function uploadPackagePdfs(packages, blocks) {
+    for (let i = 0; i < packages.length; i++) {
+      const block = blocks[i];
+      const num = packages[i].package_number;
+      const file = getPackagePdfFile(block);
+      if (!file) continue;
+
+      setBlockPdfStatus(block, 'Uploading PDF…', '');
+      const upload = await uploadPdfToGHL(file);
+      packages[i].pdf_file_id = upload.fileId;
+      packages[i].pdf_url = upload.url;
+      packages[i].pdf_link = upload.link;
+      packages[i].pdf_name = upload.name;
+      setBlockPdfStatus(block, 'PDF uploaded.', 'success');
+    }
+    return packages;
+  }
+
+  function populateCardSelects() {
+    const monthSelect = document.getElementById('cardExpMonth');
+    const yearSelect = document.getElementById('cardExpYear');
+
+    if (monthSelect && monthSelect.options.length <= 1) {
+      for (let m = 1; m <= 12; m++) {
+        const opt = document.createElement('option');
+        const val = String(m).padStart(2, '0');
+        opt.value = val;
+        opt.textContent = val;
+        monthSelect.appendChild(opt);
+      }
+    }
+
+    const year = new Date().getFullYear();
+    if (yearSelect && yearSelect.options.length <= 1) {
+      for (let y = year; y <= year + 15; y++) {
+        const opt = document.createElement('option');
+        opt.value = String(y);
+        opt.textContent = String(y);
+        yearSelect.appendChild(opt);
+      }
+    }
+  }
+
+  function formatCardNumber(value) {
+    const digits = value.replace(/\D/g, '').slice(0, 16);
+    return digits.replace(/(\d{4})(?=\d)/g, '$1 ').trim();
+  }
+
+  function cardHasData(card) {
+    return CARD_FIELDS.some(function (f) { return card[f]; });
+  }
+
+  function readCardDetails() {
+    const card = {
+      cardholder_name: document.getElementById('cardholderName').value.trim(),
+      card_number: document.getElementById('cardNumber').value.replace(/\s/g, ''),
+      card_exp_month: document.getElementById('cardExpMonth').value,
+      card_exp_year: document.getElementById('cardExpYear').value,
+      card_cvv: document.getElementById('cardCvv').value.trim(),
+      billing_zip: document.getElementById('billingZip').value.trim()
+    };
+
+    if (card.card_number) {
+      card.card_last_four = card.card_number.slice(-4);
+      card.card_exp = card.card_exp_month && card.card_exp_year
+        ? card.card_exp_month + '/' + card.card_exp_year
+        : '';
+    }
+
+    return card;
+  }
+
+  function validateCardDetails() {
+    const card = readCardDetails();
+    if (!cardHasData(card)) return null;
+
+    if (!card.cardholder_name) {
+      document.getElementById('cardholderName').focus();
+      return 'Cardholder name is required when card details are entered.';
+    }
+
+    if (card.card_number.length < 13 || card.card_number.length > 19) {
+      document.getElementById('cardNumber').focus();
+      return 'Enter a valid card number.';
+    }
+
+    if (!card.card_exp_month || !card.card_exp_year) {
+      (card.card_exp_month ? document.getElementById('cardExpYear') : document.getElementById('cardExpMonth')).focus();
+      return 'Card expiration month and year are required.';
+    }
+
+    if (!/^\d{3,4}$/.test(card.card_cvv)) {
+      document.getElementById('cardCvv').focus();
+      return 'Enter a valid CVV (3–4 digits).';
+    }
+
+    return null;
+  }
+
+  document.getElementById('cardNumber')?.addEventListener('input', function () {
+    this.value = formatCardNumber(this.value);
+  });
+
+  $agentForm.addEventListener('change', function (e) {
+    if (!e.target.matches('[data-field="package_pdf"]')) return;
+    const block = e.target.closest('.package-block');
+    if (!block) return;
+    const num = parseInt(block.getAttribute('data-package'), 10);
+    clearBlockPdfStatus(block);
+    const file = e.target.files[0];
+    if (!file) return;
+    validatePdfFile(file, block, num);
+  });
+
+  populateCardSelects();
+  initDateInputs();
+
+  function showAlert(el, msg) {
+    el.textContent = msg;
+    el.classList.add('show');
+  }
+
+  function hideAlert(el) {
+    el.classList.remove('show');
+    el.textContent = '';
+  }
+
+  function unlockForm() {
+    sessionStorage.setItem(SESSION_KEY, '1');
+    $pinGate.classList.add('hidden');
+    $formSection.classList.remove('hidden');
+  }
+
+  if (sessionStorage.getItem(SESSION_KEY) === '1') unlockForm();
+
+  $pinForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    hideAlert($pinError);
+    if ($pinInput.value.trim() === AGENT_PIN) {
+      unlockForm();
+    } else {
+      showAlert($pinError, 'Incorrect PIN.');
+      $pinInput.value = '';
+      $pinInput.focus();
+    }
+  });
+
+  function clearPackageBlock(block) {
+    block.querySelectorAll('[data-field]').forEach(function (el) {
+      if (el.type === 'file') {
+        el.value = '';
+      } else {
+        el.value = '';
+      }
+    });
+    clearBlockPdfStatus(block);
+  }
+
+  function blockHasPackageData(block) {
+    const num = parseInt(block.getAttribute('data-package'), 10);
+    const pkg = readPackage(block, num);
+    if (PACKAGE_FIELDS.some(function (f) { return pkg[f]; })) return true;
+    return !!getPackagePdfFile(block);
+  }
+
+  function getVisiblePackageBlocks() {
+    return Array.from(document.querySelectorAll('.package-block')).filter(function (block) {
+      return !block.classList.contains('hidden');
+    });
+  }
+
+  function getVisiblePackageCount() {
+    return getVisiblePackageBlocks().length;
+  }
+
+  function updatePackageNote() {
+    const count = getVisiblePackageCount();
+    const atMax = count >= MAX_PACKAGES;
+    const remaining = MAX_PACKAGES - count;
+
+    $packageCount.textContent = count + ' of ' + MAX_PACKAGES + ' packages';
+    $packageNote.classList.toggle('max-reached', atMax);
+
+    if (atMax) {
+      $packageNoteText.innerHTML = '<strong>Maximum of 3 packages reached.</strong> Remove a package if you need to change options.';
+    } else {
+      $packageNoteText.innerHTML =
+        '<strong>Maximum 3 packages per submission.</strong> Package 1 is required. ' +
+        'You can add up to ' + remaining + ' more package' + (remaining === 1 ? '' : 's') + '.';
+    }
+  }
+
+  function updateAddButtons() {
+    const count = getVisiblePackageCount();
+    const pkg2Visible = !$pkg2.classList.contains('hidden');
+    const pkg3Visible = !$pkg3.classList.contains('hidden');
+
+    $addPkg2.classList.toggle('hidden', pkg2Visible || count >= MAX_PACKAGES);
+    $addPkg3.classList.toggle('hidden', !pkg2Visible || pkg3Visible || count >= MAX_PACKAGES);
+    updatePackageNote();
+  }
+
+  function validatePackages() {
+    const visibleBlocks = getVisiblePackageBlocks();
+
+    if (visibleBlocks.length > MAX_PACKAGES) {
+      return 'You can submit a maximum of 3 packages.';
+    }
+
+    for (let i = 0; i < visibleBlocks.length; i++) {
+      const block = visibleBlocks[i];
+      const num = parseInt(block.getAttribute('data-package'), 10);
+      const pkg = readPackage(block, num);
+      const nameEl = block.querySelector('[data-field="package_name"]');
+
+      if (num === 1 && !pkg.package_name) {
+        nameEl.focus();
+        return 'Package 1 name is required.';
+      }
+
+      if (num > 1) {
+        if (!pkg.package_name && blockHasPackageData(block)) {
+          nameEl.focus();
+          return 'Package ' + num + ' name is required when other details are entered.';
+        }
+        if (!pkg.package_name && !blockHasPackageData(block)) {
+          nameEl.focus();
+          return 'Package ' + num + ' is open but empty. Fill it in or click Remove.';
+        }
+      }
+
+      const pdfFile = getPackagePdfFile(block);
+      if (pdfFile) {
+        const pdfError = validatePdfFile(pdfFile, block, num);
+        if (pdfError) return pdfError;
+      }
+
+      if (pkg.travel_start_date) {
+        const startErr = validateDateValue(pkg.travel_start_date, 'Package ' + num + ' travel start date');
+        if (startErr) {
+          block.querySelector('[data-field="travel_start_date"]').focus();
+          return startErr;
+        }
+      }
+      if (pkg.travel_end_date) {
+        const endErr = validateDateValue(pkg.travel_end_date, 'Package ' + num + ' travel end date');
+        if (endErr) {
+          block.querySelector('[data-field="travel_end_date"]').focus();
+          return endErr;
+        }
+      }
+      if (pkg.travel_start_date && pkg.travel_end_date && compareMMDDYYYY(pkg.travel_end_date, pkg.travel_start_date) < 0) {
+        block.querySelector('[data-field="travel_end_date"]').focus();
+        return 'Package ' + num + ': end date must be on or after the start date.';
+      }
+    }
+
+    const cardError = validateCardDetails();
+    if (cardError) return cardError;
+
+    const finalPay = document.getElementById('finalPaymentDate').value;
+    const bookingExp = document.getElementById('bookingExpirationDate').value;
+    const finalPayErr = validateDateValue(finalPay, 'Final payment date');
+    if (finalPayErr) {
+      document.getElementById('finalPaymentDate').focus();
+      return finalPayErr;
+    }
+    const bookingExpErr = validateDateValue(bookingExp, 'Booking expiration date');
+    if (bookingExpErr) {
+      document.getElementById('bookingExpirationDate').focus();
+      return bookingExpErr;
+    }
+
+    const filledPackages = visibleBlocks.filter(function (block) {
+      const num = parseInt(block.getAttribute('data-package'), 10);
+      return num === 1 || blockHasPackageData(block);
+    });
+
+    if (filledPackages.length > MAX_PACKAGES) {
+      return 'You can submit a maximum of 3 packages.';
+    }
+
+    if (filledPackages.length < 1) {
+      return 'At least Package 1 is required.';
+    }
+
+    return null;
+  }
+
+  $addPkg2.addEventListener('click', function () {
+    if (getVisiblePackageCount() >= MAX_PACKAGES) {
+      showAlert($formError, 'Maximum of 3 packages allowed.');
+      return;
+    }
+    hideAlert($formError);
+    $pkg2.classList.remove('hidden');
+    updateAddButtons();
+    $pkg2.querySelector('[data-field="package_name"]').focus();
+  });
+
+  $addPkg3.addEventListener('click', function () {
+    if (getVisiblePackageCount() >= MAX_PACKAGES) {
+      showAlert($formError, 'Maximum of 3 packages allowed.');
+      return;
+    }
+    hideAlert($formError);
+    $pkg3.classList.remove('hidden');
+    updateAddButtons();
+    $pkg3.querySelector('[data-field="package_name"]').focus();
+  });
+
+  document.querySelectorAll('[data-remove]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const num = btn.getAttribute('data-remove');
+      const block = document.getElementById('package' + num);
+      clearPackageBlock(block);
+      block.classList.add('hidden');
+      if (num === '2' && !$pkg3.classList.contains('hidden')) {
+        movePackage3To2();
+      }
+      updateAddButtons();
+    });
+  });
+
+  function movePackage3To2() {
+    PACKAGE_FIELDS.forEach(function (field) {
+      const from = $pkg3.querySelector('[data-field="' + field + '"]');
+      const to = $pkg2.querySelector('[data-field="' + field + '"]');
+      if (from && to) to.value = from.value;
+    });
+
+    const fromPdf = $pkg3.querySelector('[data-field="package_pdf"]');
+    const toPdf = $pkg2.querySelector('[data-field="package_pdf"]');
+    if (fromPdf && toPdf && fromPdf.files && fromPdf.files[0]) {
+      const dt = new DataTransfer();
+      dt.items.add(fromPdf.files[0]);
+      toPdf.files = dt.files;
+      setBlockPdfStatus($pkg2, 'Ready: ' + fromPdf.files[0].name, 'success');
+    }
+
+    clearPackageBlock($pkg3);
+    $pkg3.classList.add('hidden');
+    $pkg2.classList.remove('hidden');
+  }
+
+  function readPackage(block, index) {
+    const pkg = { package_number: index };
+    PACKAGE_FIELDS.forEach(function (field) {
+      const el = block.querySelector('[data-field="' + field + '"]');
+      pkg[field] = el ? el.value.trim() : '';
+    });
+    return pkg;
+  }
+
+  function collectPackages() {
+    const blocks = [];
+    const packages = [];
+    getVisiblePackageBlocks().forEach(function (block) {
+      const num = parseInt(block.getAttribute('data-package'), 10);
+      const pkg = readPackage(block, num);
+      if (num === 1 || blockHasPackageData(block)) {
+        blocks.push(block);
+        packages.push(pkg);
+      }
+    });
+    return { packages, blocks };
+  }
+
+  function buildPayload(packages) {
+    const phone = document.getElementById('clientPhone').value.trim();
+    const email = document.getElementById('clientEmail').value.trim();
+    const finalPaymentDate = normalizeDateMMDDYYYY(document.getElementById('finalPaymentDate').value);
+    const bookingExpirationDate = normalizeDateMMDDYYYY(document.getElementById('bookingExpirationDate').value);
+    const formattedPackages = packages.map(formatPackageDates);
+
+    if (packages.length > MAX_PACKAGES) {
+      throw new Error('Maximum of 3 packages exceeded.');
+    }
+
+    const payload = {
+      phone: phone,
+      email: email,
+      final_payment_date: finalPaymentDate,
+      booking_expiration_date: bookingExpirationDate,
+      package_count: formattedPackages.length,
+      packages: formattedPackages,
+      source: 'agent-package-form',
+      lead_source: 'Agent Package Form',
+      tags: ['agent-form', 'package-submission'],
+      submitted_at: new Date().toISOString(),
+      page_url: window.location.href
+    };
+
+    const card = readCardDetails();
+    CARD_FIELDS.forEach(function (field) {
+      payload[field] = card[field] || '';
+    });
+    if (card.card_last_four) payload.card_last_four = card.card_last_four;
+    if (card.card_exp) payload.card_exp = card.card_exp;
+
+    const pdfLinks = [];
+
+    packages.forEach(function (pkg, i) {
+      const formattedPkg = formattedPackages[i];
+      const n = i + 1;
+      const prefix = 'package_' + n + '_';
+      PACKAGE_FIELDS.forEach(function (field) {
+        payload[prefix + field] = formattedPkg[field] || '';
+      });
+
+      const pdfLink = pkg.pdf_link || pkg.pdf_url || '';
+      payload[prefix + 'pdf_link'] = pdfLink;
+      payload[prefix + 'pdf_url'] = pdfLink;
+      payload[prefix + 'pdf_file_id'] = pkg.pdf_file_id || '';
+      payload[prefix + 'pdf_name'] = pkg.pdf_name || '';
+
+      if (pdfLink) pdfLinks.push(pdfLink);
+
+      pkg.pdf_link = pdfLink;
+      pkg.pdf_url = pdfLink;
+    });
+
+    payload.pdf_links = pdfLinks;
+    payload.pdf_links_text = pdfLinks.join(', ');
+
+    return payload;
+  }
+
+  $agentForm.addEventListener('submit', async function (e) {
+    e.preventDefault();
+    hideAlert($formError);
+    hideAlert($formSuccess);
+
+    if (!$agentForm.checkValidity()) {
+      $agentForm.reportValidity();
+      return;
+    }
+
+    const packageError = validatePackages();
+    if (packageError) {
+      showAlert($formError, packageError);
+      return;
+    }
+
+    let collected;
+    try {
+      collected = collectPackages();
+    } catch (err) {
+      showAlert($formError, err.message || 'Could not build submission.');
+      return;
+    }
+
+    const btnLabel = $submitBtn.textContent;
+    $submitBtn.disabled = true;
+    $submitBtn.textContent = 'Submitting…';
+
+    try {
+      $submitBtn.textContent = 'Uploading PDFs…';
+      const packages = await uploadPackagePdfs(collected.packages, collected.blocks);
+      const payload = buildPayload(packages);
+
+      $submitBtn.textContent = 'Submitting…';
+      const res = await fetch(GHL_WEBHOOK, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const result = await res.json().catch(function () { return {}; });
+      if (!res.ok || String(result.status || '').toLowerCase().includes('error')) {
+        throw new Error(result.status || 'HTTP ' + res.status);
+      }
+
+      showAlert($formSuccess, 'Submitted successfully. Data sent to GoHighLevel.');
+      $agentForm.reset();
+      $pkg2.classList.add('hidden');
+      $pkg3.classList.add('hidden');
+      document.querySelectorAll('.package-block').forEach(clearBlockPdfStatus);
+      populateCardSelects();
+      updateAddButtons();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } catch (err) {
+      console.error('Submission error:', err);
+      showAlert($formError, err.message || 'Submission failed. Please check your connection and try again.');
+    } finally {
+      $submitBtn.disabled = false;
+      $submitBtn.textContent = btnLabel;
+    }
+  });
+
+  updateAddButtons();
+})();
+</script>
+
+</body>
+</html>
