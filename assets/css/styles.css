@@ -282,12 +282,68 @@ h3{font-size:1.5rem}
 .field select{color:#fff}.field select option{background:var(--ink-1)}
 .field textarea{resize:vertical;min-height:92px}
 .field--row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field-phone{display:flex;gap:8px;align-items:stretch}
+.field-phone .phone-country{flex:0 0 108px;width:auto;min-width:108px;padding:14px 10px}
+.field-phone input[type=tel]{flex:1;min-width:0}
 .lead__form .btn{width:100%;justify-content:center;margin-top:6px}
 .form-note{font-size:.8rem;color:var(--on-dark-muted);text-align:center;margin-top:15px}
 .form-note a{color:var(--gold-2)}
 .form-msg{display:none;padding:14px 16px;border-radius:4px;font-size:.92rem;margin-bottom:18px}
 .form-msg.ok{display:block;background:rgba(47,157,178,.15);color:var(--teal-2);border:1px solid rgba(47,157,178,.4)}
 .form-msg.err{display:block;background:rgba(232,130,46,.14);color:#f0a86a;border:1px solid rgba(232,130,46,.4)}
+.form-success strong{display:block;font-size:1.1rem;margin-bottom:8px;color:#fff}
+.form-success p{margin:0 0 18px;color:var(--on-dark-muted);line-height:1.5}
+.form-success .form-book-btn{width:100%;justify-content:center}
+
+/* Home scroll popup -------------------------------------------------------- */
+.scroll-popup{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:24px}
+.scroll-popup[hidden]{display:none}
+.scroll-popup__overlay{position:absolute;inset:0;background:rgba(4,14,26,.72);backdrop-filter:blur(4px)}
+.scroll-popup__panel{position:relative;width:min(100%,480px);background:var(--ink-1);border:1px solid var(--line-dark);
+  border-radius:6px;padding:42px 38px 38px;box-shadow:var(--shadow);animation:popup-in .45s var(--ease) both}
+.scroll-popup__close{position:absolute;top:14px;right:14px;width:40px;height:40px;border:0;background:transparent;
+  color:var(--on-dark-muted);font-size:1.3rem;cursor:pointer;border-radius:50%;transition:color .3s,background .3s}
+.scroll-popup__close:hover{color:#fff;background:rgba(255,255,255,.06)}
+.scroll-popup__body h3{margin:10px 0 12px;font-size:clamp(1.6rem,4vw,2rem)}
+.scroll-popup__body>p{color:var(--on-dark-muted);font-size:.94rem;margin-bottom:22px}
+.scroll-popup__body .btn{width:100%;justify-content:center;margin-top:4px}
+.scroll-popup__thanks{text-align:center;padding:18px 8px}
+.scroll-popup__thanks .k{display:block;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold-2);margin-bottom:10px}
+.scroll-popup__thanks h3{margin-bottom:10px}
+.scroll-popup__thanks p{color:var(--on-dark-muted);font-size:.95rem}
+@keyframes popup-in{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+
+/* Booking modal ------------------------------------------------------------ */
+.booking-modal{position:fixed;inset:0;z-index:210;display:grid;place-items:center;padding:24px}
+.booking-modal[hidden]{display:none}
+.booking-modal__overlay{position:absolute;inset:0;background:rgba(4,14,26,.78);backdrop-filter:blur(4px)}
+.booking-modal__panel{position:relative;width:min(100%,520px);max-height:min(92vh,720px);overflow:auto;
+  background:var(--ink-1);border:1px solid var(--line-dark);border-radius:6px;padding:42px 38px 38px;
+  box-shadow:var(--shadow);animation:popup-in .45s var(--ease) both}
+.booking-modal__close{position:absolute;top:14px;right:14px;width:40px;height:40px;border:0;background:transparent;
+  color:var(--on-dark-muted);font-size:1.3rem;cursor:pointer;border-radius:50%;transition:color .3s,background .3s}
+.booking-modal__close:hover{color:#fff;background:rgba(255,255,255,.06)}
+.booking-modal__body h3{margin:10px 0 8px;font-size:clamp(1.5rem,4vw,1.9rem)}
+.booking-modal__sub{color:var(--on-dark-muted);font-size:.94rem;margin-bottom:22px}
+.booking-times{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.booking-time{padding:11px 8px;border:1px solid var(--line-dark);border-radius:3px;background:rgba(255,255,255,.03);
+  color:var(--on-dark);font-family:var(--f-body);font-size:.82rem;cursor:pointer;transition:border-color .3s,background .3s,color .3s}
+.booking-time:hover,.booking-time.sel{border-color:var(--gold);background:rgba(201,162,75,.12);color:#fff}
+.booking-modal__body .btn{width:100%;justify-content:center;margin-top:8px}
+
+/* Booking success popup ---------------------------------------------------- */
+.booking-success-popup{position:fixed;inset:0;z-index:220;display:grid;place-items:center;padding:24px}
+.booking-success-popup[hidden]{display:none}
+.booking-success-popup__overlay{position:absolute;inset:0;background:rgba(4,14,26,.82);backdrop-filter:blur(5px)}
+.booking-success-popup__panel{position:relative;width:min(100%,460px);text-align:center;background:var(--ink-1);
+  border:1px solid var(--line-dark);border-radius:6px;padding:48px 38px 40px;box-shadow:var(--shadow);animation:popup-in .45s var(--ease) both}
+.booking-success-popup__close{position:absolute;top:14px;right:14px;width:40px;height:40px;border:0;background:transparent;
+  color:var(--on-dark-muted);font-size:1.3rem;cursor:pointer;border-radius:50%;transition:color .3s,background .3s}
+.booking-success-popup__close:hover{color:#fff;background:rgba(255,255,255,.06)}
+.booking-success-popup__panel .k{display:block;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold-2);margin-bottom:12px}
+.booking-success-popup__panel h3{margin-bottom:12px;font-size:clamp(1.6rem,4vw,2rem)}
+.booking-success-popup__panel p{color:var(--on-dark-muted);font-size:.95rem;margin-bottom:24px;line-height:1.55}
+.booking-success-popup__panel .btn{width:100%;justify-content:center}
 
 /* Footer ------------------------------------------------------------------- */
 .footer{background:var(--ink);padding:90px 0 34px;border-top:1px solid var(--line-dark)}
@@ -399,7 +455,15 @@ h3{font-size:1.5rem}
 }
 @media(max-width:640px){
   .deals,.field--row,.footer__grid{grid-template-columns:1fr}
+  .field-phone .phone-country{flex:0 0 96px;min-width:96px}
   .lead__info,.lead__form{padding:38px 26px}
+  .scroll-popup{padding:16px}
+  .scroll-popup__panel{padding:34px 24px 28px}
+  .booking-modal{padding:16px}
+  .booking-modal__panel{padding:34px 24px 28px}
+  .booking-success-popup{padding:16px}
+  .booking-success-popup__panel{padding:40px 24px 32px}
+  .booking-times{grid-template-columns:repeat(2,1fr)}
 }
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}

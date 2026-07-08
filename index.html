@@ -357,7 +357,7 @@
                 <option>Europe</option><option>Caribbean / Mexico</option><option>Honeymoon</option>
                 <option>Solo trip</option><option>Not sure yet</option>
               </select></div>
-            <div><label for="dt">Approx. dates</label><input id="dt" name="travel_dates" placeholder="e.g. July 2026"></div>
+            <div><label for="dt">Approx. dates</label><input id="dt" name="travel_dates" placeholder="MM-DD-YYYY" inputmode="numeric"></div>
           </div>
           <div class="field field--row">
             <div><label for="tr">Travelers</label><input id="tr" name="travelers" placeholder="2 adults, 2 kids"></div>
@@ -411,7 +411,45 @@
 </footer>
 
 <button class="totop" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+
+<div class="scroll-popup" id="scrollPopup" hidden aria-hidden="true" role="dialog" aria-labelledby="scrollPopupTitle">
+  <div class="scroll-popup__overlay" data-close></div>
+  <div class="scroll-popup__panel">
+    <button type="button" class="scroll-popup__close" data-close aria-label="Close"><i class="ti ti-x"></i></button>
+    <div class="scroll-popup__body">
+      <span class="eyebrow">Before you go</span>
+      <h3 id="scrollPopupTitle">Dreaming of your next <span class="italic">getaway</span>?</h3>
+      <p>Share a few details and we'll send tailored trip ideas — no pressure, no obligation.</p>
+      <form id="scrollPopupForm" novalidate>
+        <div class="form-msg"></div>
+        <div class="field field--row">
+          <div><label for="spf-fn">First name</label><input id="spf-fn" name="first_name" required></div>
+          <div><label for="spf-ln">Last name</label><input id="spf-ln" name="last_name"></div>
+        </div>
+        <div class="field"><label for="spf-em">Email</label><input id="spf-em" type="email" name="email" required></div>
+        <div class="field"><label for="spf-dest">What are you dreaming of?</label>
+          <select id="spf-dest" name="destination">
+            <option value="">Choose…</option>
+            <option>Caribbean cruise</option>
+            <option>All-inclusive resort</option>
+            <option>Family getaway</option>
+            <option>Europe</option>
+            <option>Honeymoon</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn--gold">Send me ideas <i class="ti ti-send"></i></button>
+      </form>
+    </div>
+    <div class="scroll-popup__thanks" hidden>
+      <span class="k">You're all set</span>
+      <h3>Thank you!</h3>
+      <p>We'll be in touch within one business day with ideas built around you.</p>
+    </div>
+  </div>
+</div>
+
 <script src="assets/js/main.js"></script>
-<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a4984550fa9255697183072"></script>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a4e297cf4d6efe8c6105a3d"></script>
 </body>
 </html>
