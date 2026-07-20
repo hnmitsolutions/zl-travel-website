@@ -390,8 +390,12 @@ document.addEventListener("DOMContentLoaded", () => {
   /* Scroll reveal */
   const io = new IntersectionObserver((e) => {
     e.forEach(x => { if (x.isIntersecting){ x.target.classList.add("in"); io.unobserve(x.target); } });
-  }, { threshold: 0.16 });
+  }, { threshold: 0.08, rootMargin: "0px 0px -5% 0px" });
   document.querySelectorAll("[data-animate], .reveal-img").forEach(el => io.observe(el));
+  // Ensure reveal overlays don't stay stuck covering images
+  setTimeout(() => {
+    document.querySelectorAll(".reveal-img:not(.in)").forEach(el => el.classList.add("in"));
+  }, 2500);
 
   /* Count-up */
   const cio = new IntersectionObserver((e) => {
