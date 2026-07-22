@@ -187,5 +187,5 @@ If you have any questions or comments about our Privacy Policy or wish to exerci
 of your legal rights regarding your Personal Information, please contact us directly by  
 phone or email below.  
 ZL Travel Agency  
-(515) 918-1919  
+(515) 420-0551  
 Sales@ZLTravelAgency.com

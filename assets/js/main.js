@@ -333,7 +333,7 @@ const initBookingModal = () => {
       showBookingSuccessPopup();
     } catch (e) {
       bookingMsg.className = "form-msg err";
-      bookingMsg.textContent = "Something went wrong. Please call (515) 918-1919 or email Sales@ZLTravelAgency.com.";
+      bookingMsg.textContent = "Something went wrong. Please call (515) 420-0551 or email Sales@ZLTravelAgency.com.";
       btn.disabled = false;
       btn.innerHTML = label;
     }
@@ -545,7 +545,7 @@ document.addEventListener("DOMContentLoaded", () => {
         saveLastLeadData(payload);
         showSuccess(data.first_name.trim());
       } catch (e) {
-        showError("Something went wrong. Please call (515) 918-1919 or email Sales@ZLTravelAgency.com.");
+        showError("Something went wrong. Please call (515) 420-0551 or email Sales@ZLTravelAgency.com.");
         btn.disabled = false;
         btn.innerHTML = label;
       }
@@ -635,7 +635,7 @@ document.addEventListener("DOMContentLoaded", () => {
           setTimeout(closePopup, 2200);
         } catch (e) {
           popupMsg.className = "form-msg err";
-          popupMsg.textContent = "Something went wrong. Please try again or call (515) 918-1919.";
+          popupMsg.textContent = "Something went wrong. Please try again or call (515) 420-0551.";
           btn.disabled = false;
           btn.innerHTML = label;
         }
