@@ -1,0 +1,428 @@
+Terms and Conditions
+These terms and conditions (“Terms and Conditions”) govern the relationship between
+ZL Travel Agency LLC d/b/a ZL Travel Agency (“ZLTA” and/or “we/us/our”) and you, the
+purchaser or traveler (“Client” and “you/your”). By planning travel with ZLTA, you agree
+to be bound by these terms and acknowledge that ZLTA acts solely as a booking agent
+for disclosed principal supplier tour operators, cruise lines, hotels, airlines, air charters,
+bus companies, ground transportation, boat purveyors or owners, and other
+independent contractors providing accommodations, transportation, and other services
+(“Supplier(s)”) and is not the source or provider of the travel services. These terms
+include warranties and disclaimers and exclusions of liability and may restrict your rights
+and remedies and provide protection to ZLTA.
+USE OF ZLTA SERVICES, ACCESS AND INFORMATION FOR TRAVEL BOOKINGS
+You warrant that you are at least 18 years of age and possess the legal authority to
+enter into this Agreement and to make travel bookings with ZLTA. You agree to be
+financially responsible for all travel bookings you make with us, whether made on behalf
+of yourself or for other members of your traveling party. You warrant that all information
+supplied by you on behalf of yourself, members of your household, or others for whom
+you are authorized to transact business with us is true and accurate. You agree that you
+will only make legitimate reservations or purchases with ZLTA and its Suppliers, and you
+acknowledge that, without limitation, any speculative, false, or fraudulent reservation is
+prohibited.
+ZLTA accepts all bookings solely as the booking agent for the travel Suppliers on your
+itinerary. Separate Supplier terms and conditions will apply to your reservation and
+purchase of travel-related goods and services that you select, and you understand and
+agree that by booking travel through ZLTA, you are also agreeing to the booking terms
+of each Supplier partner you have selected for your itinerary. You agree that you will
+abide by the terms and conditions of purchase imposed by any Supplier that you have
+selected as a service provider on an itinerary you have approved.
+ZLTA is not liable or responsible for any arrangements made independently of ZLTA.
+ZLTA assumes no responsibility for costs or fees you incur for independent
+arrangements not booked through ZLTA, inclusive of, but not limited to, airline, hotel,
+excursion, and travel protection related charges. If you make your own flight
+arrangements, ZLTA is not responsible for any loss resulting from cancellation or
+changes in international gateways, itineraries, or travel dates, and cannot assist you
+with any schedule changes or delays related to air reservations you have made on your
+own arrangement. It may not be possible to earn frequent flyer or other loyalty points for
+reservations on your itinerary. With limited exceptions, hotel, casino, and airline rewards
+or points cannot be redeemed for travel arrangements made by ZLTA.
+
+ZLTA is an Independent Contractor of WorldVia, California Seller of Travel CSOT,
+Florida FSOT, Washington WSOT. Registration as a seller of travel does not constitute
+approval by the State of California.
+RIGHT TO CORRECT ERRORS AND OFFERS SUBJECT TO AVAILABILITY
+We reserve the right to correct errors. In the event of any pricing error or omission, we
+reserve the right to adjust such pricing or make any other corrections. All offers,
+incentives and Supplier promotions are subject to availability and may change without
+notice. You are advised to confirm reservations well in advance of your anticipated
+dates of travel to avoid disappointment, increases in fares and additional late booking
+fees. Availability and pricing of services may fluctuate, based on the Supplier’s pricing
+policies.
+PAYMENTS, CANCELLATIONS, AND CHANGES TO BOOKINGS
+You shall be completely responsible for all charges, fees, duties, taxes, and
+assessments arising out of your travel bookings through ZLTA. By submitting a credit
+card authorization form to ZLTA, you agree to allow ZLTA to use your payment method
+to purchase travel products from our Suppliers on your behalf. EXCEPTING IN CASES
+0F FRAUD, YOU AGREE NOT T0 FILE ANY DISPUTE WITH YOUR BANK OR
+CREDIT CARD COMPANY TO AVOID OR VIOLATE ANY BOOKING TERMS AND
+CONDITIONS OF ZLTA OR ITS SUPPLIERS, INCLUDING CANCELLATIONS OR
+CHANGES OF ITINERARY OR ARRANGEMENTS FOR REASONS BEYOND THE
+CONTROL OF ZLTA OR ITS SUPPLIERS. IF YOU ATTEMPT TO CHARGEBACK,
+REVERSE OR RECOLLECT A PREVIOUSLY AUTHORIZED TRIP PAYMENT, ZLTA
+RESERVES THE RIGHT TO COLLECT ALL ADDITIONAL COSTS, FEES AND
+EXPENSES ASSOCIATED WITH SUCH CHARGEBACK, REVERSAL OR
+RECOLLECTION, INCLUDING, WITHOUT LIMITATION, ATTORNEY FEES.
+All payments for travel are due prior to departure according to each Supplier’s terms
+and conditions of booking. You understand that failure to make final payment or any
+violation of a Supplier’s conditions of purchase may result in cancellation of your
+reservations, in your being denied access to any flights, tours, hotels, cruises, or other
+travel services, or in your forfeiting any monies paid for your reservations. In some
+cases, there is NO REFUND once a booking is made and under deposit. You may not
+be entitled to a refund if you change or cancel your travel plans after confirmation of a
+booking. All cancellation requests must be sent to ZLTA in writing. As a result of
+cancellation or changes to confirmed bookings, ZLTA’s and third-party Supplier’s
+cancellation penalties will apply. Cancellation fees will be charged to the credit card or
+other payment method you authorized to pay for travel services or deducted from the
+Supplier’s refund.
+
+If you decide to change any portion of your confirmed arrangements prior to departure
+or during your trip, we will attempt to assist you. Certain bookings may not be able to be
+changed, and you will be responsible for any increases in cost imposed by the Supplier,
+as well as any ZLTA or Supplier change fees. All requests for changes to a booking
+must be made in writing to ZLTA. When tour, cruise or package prices are based on
+Suppliers’ contract rates, you will not be entitled to any refund for any unused portion of
+travel.
+TRAVEL DOCUMENTS, INCLUDING TSA AND DHS ACCEPTABLE IDENTIFICATION
+REQUIREMENTS
+It is the responsibility of each Client to obtain and carry a valid passport book, visa(s),
+and all other documents required by applicable government regulations. Passport cards
+are not accepted for most international travel. When traveling domestically or
+internationally, the U.S. Transportation Security Administration (TSA) and U.S.
+Department of Homeland Security (DHS) advise that everyone carry acceptable
+identification in order to board a flight. Acceptable identification can be found at
+http://www.tsa.gov/ and examples include DHS-designated enhanced driver’s license,
+US passport, or a foreign government passport. You will need a state-issued REAL ID
+compliant license or identification card, or another acceptable form of ID (such as a
+passport), to fly within the United States.
+Certain countries will not admit a passenger if their passport expires within six (6)
+months of the anticipated date of return. Non-United States citizens may require
+additional documentation, and you are responsible to make ZLTA aware when traveling
+on a passport from a country other than the United States of America. ZLTA neither
+controls nor warrants the issuance of visas or approval of visa waivers related to your
+travel. Should a visa not be issued, ZLTA is not responsible for lost payments made
+toward your trip. Please note that rules of each country regarding entry and exit may
+change at any time.
+Children and infants may also require travel documents. Minors traveling with one
+parent, and/or without both parents, may be stopped and not admitted, unless
+authenticated and verified consent forms are provided to the authorities; please see
+https://help.cbp.gov for additional information. The U.S. Customs and Border Protection
+Agency requires that for groups of children under age 19 arriving to the United States by
+land or sea from contiguous territory and traveling with a school group, religious group,
+social or cultural organization, or sports team, may also present an original or copy of
+his or her birth certificate, a Consular Report of Birth Abroad, or a Naturalization
+Certificate. Parental or legal guardian consent must be provided to the supervising adult
+or group leader in writing.
+
+The name, date of birth and gender that appears on the identification card must exactly
+match the same such data that is listed on your tickets and booking records. You
+acknowledge that it is your responsibility to ensure that the information on your tickets
+and confirmations is accurate. Any discrepancy between your reservation and your
+travel documentation may result in denied boarding or an undue delay at an airport
+security checkpoint causing you to miss your flight, and any subsequent scheduled
+travel bookings on cruises and tours.
+WHEN YOU RECEIVE YOUR TRAVEL DOCUMENTS, IT IS YOUR RESPONSIBILITY
+TO REVIEW AND VERIFY ALL INFORMATION FOR ACCURACY. CONTACT ZLTA
+IMMEDIATELY IF CHANGES OR CORRECTIONS ARE REQUIRED. IF YOU HAVE
+NOT NOTIFIED US OF NECESSARY CORRECTIONS TO YOUR RESERVATION
+WITHIN TWENTY-FOUR (24) HOURS OF RECEIVING YOUR TRAVEL DOCUMENTS,
+ZLTA BEARS NO RESPONSIBILITY FOR ANY ADDITIONAL COSTS ASSOCIATED
+WITH MAKING NECESSARY CORRECTIONS.
+INDIVIDUAL ENTRY AND EXIT REQUIREMENTS
+Each country holds different rules of entry for travel, including views of past criminal
+offenses, whether within or outside of their boundaries, and it is your responsibility to
+know whether you are eligible to enter the jurisdictions on your itinerary. If you have a
+current or prior criminal offense, contact that country directly for entry and exit
+requirements. You can visit the US State Department Website for further information
+about these requirements. See, https://travel.state.gov/content/travel.html. We do not
+inquire about an individual’s criminal record in the interest of respecting our Clients’
+privacy. For example, if traveling to or through Canada, individuals with a Driving While
+Intoxicated (DWI) record or with judgements for unpaid child support should review
+current entry requirements. See: https://www.canada.ca.
+In some countries, it is illegal to enter with firearms or ammunition, and if you attempt to
+enter a country with prohibited items, you may be detained, refused admission, or
+arrested.
+IMMUNIZATIONS AND HEALTH SCREENINGS
+You must have the proper immunizations and health screenings and required
+documentation of such immunizations and screenings before travel. ZLTA shall not
+assume responsibility for the accuracy of health, vaccination, or documentation
+requirements prior to departure or upon landing at the final destination. In some cases,
+required inoculations must be recorded by Client’s health practitioner on a valid
+vaccination certificate, which the Client must carry for proof of inoculation. If you are
+concerned about taking any medications or receiving certain inoculations, check with
+your health practitioner BEFORE booking. Check the State Department Web site
+
+http://travel.state.gov, for relevant information relating to travel to specific destinations,
+and the Center for Disease Control http://wwwnc.cdc.gov/travel/ relating to health issues
+related to travel.
+ACCESSIBILITY, TRAVELERS WITH DISABILITIES, SPECIAL TRAVEL NEEDS.
+Travelers with disabilities or special needs who may require non-emergency special
+services, additional support or accommodation of a disability should advise us in
+advance of booking, so that we can request assistance or arrange for appropriate
+services or equipment. In some cases when travelers are unable to use their own
+wheelchairs, mobility devices, medical equipment or devices, rental of special
+equipment or devices may result in additional charges. Airlines may impose charges for
+additional baggage and may have restrictions on the size of wheelchairs that they can
+accommodate.
+In order to travel with a service animal or emotional support animal, some Suppliers
+may require advance arrangements and special documentation of the animal’s health
+and training.
+When traveling outside of the United States or Canada, laws and regulations will often
+apply different standards of accommodation for travelers with disabilities or special
+needs. While we are committed to assisting travelers with disabilities or special needs,
+ZLTA is not responsible for the failure of Suppliers in those countries to meet the needs
+of travelers when the Supplier follows laws and regulations of the local jurisdiction.
+Additionally, the laws and regulations of local jurisdications covering travelers with
+disabilities or special needs may change without prior advance notice and ZLTA bears
+no responsibility in case of changes in the legal or regulatory framework of the places
+you may visit on your trip.
+Certain destinations may have limited medical facilities or limited availability of
+prescription medications. We recommend that you consult with your health practitioner
+to discuss the details of your trip. Certain travel insurance plans may provide access to
+emergency medical care, medical evacuation and replacement of prescription
+medication. WE RECOMMEND THE PURCHASE OF COMPREHENSIVE TRAVEL
+INSURANCE ON ALL BOOKINGS.
+RISKS AND SAFETY
+Travel to certain destinations may involve greater risk than others. ZLTA urges Clients to
+remain informed on a daily basis as to current news events, as well as to review travel
+prohibitions, warnings, announcements and advisories issued by the United States
+Government prior to booking travel to international destinations. Information on health
+and safety conditions in various countries and the level of risk associated with travel to
+particular international destinations can be found at http://www.state.gov,
+
+http://www.tsa.gov, http://www.dot.gov, http://www.faa.gov, http://www.cdc.gov, and
+http://www.cbp.gov. The Smart Traveler Enrollment Program (STEP) is a free service
+provided by the U.S. Government to U.S. citizens who are traveling to, or living in, a
+foreign country. STEP allows you to enter information about your upcoming trip abroad
+so that the Department of State can better assist you in an emergency. Registration is
+recommended and provided by going to https://step.state.gov/step/
+BY OFFERING FOR SALE TRAVEL TO PARTICULAR DESTINATIONS, ZLTA DOES
+NOT REPRESENT OR WARRANT THAT TRAVEL TO SUCH POINTS IS ADVISABLE
+OR WITHOUT RISK, AND SHALL NOT BE LIABLE FOR COSTS, DAMAGES, OR
+LOSSES THAT MAY RESULT FROM TRAVEL TO SUCH DESTINATIONS. CLIENT’S
+PARTICIPATION CONSTITUTES ACCEPTANCE OF SUCH EVENTS AT CLIENT’S
+OWN RISK.
+Laws and attitudes in some countries may affect safety and ease of travel. Many
+countries do not recognize same-sex marriage. Many countries also do not recognize
+the X gender marker in passports and do not have IT systems at ports of entry that can
+accept gender markers other than female and male. Many countries still consider
+consensual same-sex relations a crime. In some of these countries, individuals who
+engage in same-sex sexual relations may face severe punishment.
+Certain activities that are included as part of itineraries that we book pose inherent risks
+and may be dangerous. Your itinerary may also involve travel to remote areas without
+access to medical facilities or treatment, changing weather conditions, interactions or
+encounters with wildlife, and other potentially dangerous conditions. By booking a trip
+with ZLTA, you acknowledge that you are aware that the physical exertion required to
+participate in certain activities can activate or aggravate pre-existing injuries, conditions,
+or congenital defects. You acknowledge that you should seek medical advice if you
+know or suspect that your physical condition may be incompatible with the activities on
+your itinerary. You may be required to wear approved safety equipment while
+participating in certain activities, and by booking travel with us and participating in these
+activities, you agree to use the recommended safety equipment and to ask questions if
+you are unsure about how to properly or safely use equipment.
+If you use, consume, or are under the influence of alcohol or illegal drugs prior to or
+while engaging in any activities on your itinerary, YOU ASSUME AND ACCEPT ALL
+RISKS, DANGERS, AND HAZARDS THAT MAY RESULT INCLUDING THE
+POSSIBILITY OF PERSONAL INJURY, DEATH, PROPERTY DAMAGE, AND LOSS,
+even in the event of negligence or fault by ZLTA or third parties, and you indemnify
+ZLTA from any and all liability for any damage to property or personal injury to any third
+party, resulting from your participation in the Activities, while, during, or after
+consumption of illegal drugs or alcohol.
+
+In the event of emergent health or safety concerns, once ZLTA has investigated the
+prevailing situation, ZLTA shall have the sole and absolute discretion whether to
+proceed with any ZLTA escorted trip or private departure, or to make alterations to the
+itinerary.
+HAZARDOUS MATERIALS
+Federal law prohibits passengers from bringing hazardous materials on the aircraft.
+(1) Federal law forbids the carriage of hazardous materials aboard aircraft in the
+passenger’s luggage or on the passenger’s person. A violation can result in five years’
+imprisonment and penalties of $250,000 or more (49 U.S.C. 5124). Hazardous
+materials include explosives, compressed gases, flammable liquids and solids,
+oxidizers, poisons, corrosives and radio- active materials. Examples: Paints, lighter
+fluid, fireworks, tear gases, oxygen bottles, and radiopharmaceuticals.
+(2) There are special exceptions for small quantities (up to 70 ounces total) of medicinal
+and toilet articles carried in the passenger’s luggage and certain smoking materials
+carried on the passenger’s person. For further information, each passenger should
+contact the relevant airline representative(s) on their itinerary. Restrictions on hazardous
+materials are listed http://www.tsa.gov/traveler-information/prohibited-items.
+INSECTICIDE NOTICE
+We recommend that you refer to the DOT list of airports in countries that require airlines
+to treat the passenger cabin with insecticides prior to the flight or while on the aircraft.
+This list is on the DOT’s website and is updated from time to time:
+http://www.dot.gov/office-policy/aviation-policy/aircraft-disinsection-requirements.
+AIR TRAVEL, SCHEDULE RECONFIRMATION, CHECK-IN
+Your airline ticket is a contract between you and the air carrier, even if you purchase
+through ZLTA. If you purchase air travel through ZLTA, you acknowledge and agree that
+ZLTA does not have the right to control the operations of independent airlines, and
+agree that ZLTA is not liable for any personal injury, property damage related to your
+purchase of air tickets or air travel, including, but not limited to any act, error, omission,
+injury, loss, accident, or delay caused by any act, error or omission of the airline,
+including their failure to deliver services, partial or inadequate delivery of services,
+airline policies including refund or rebooking policies, fees for checked or carry-on
+luggage, fuel increases, bankruptcy or cessation of operations.
+Airlines strictly prohibit certain booking practices such as “throw away” tickets or “hidden
+city” itineraries. Agency recommends Client review airline policies to avoid requesting
+the booking of a prohibited ticket. Agency reserves the right to seek reimbursement
+
+from Client for bookings made at Client’s direction that violate airline policies and result
+in liability to the airline.
+You understand and agree that ZLTA functions solely and exclusively as a booking
+agent for the air carrier, that we do not handle or hold client funds for airline tickets, and
+that we are not the Merchant of Record under the meaning of that term under the
+Department of Transportation’s regulations. Because ZLTA does not hold or handle
+client funds, you understand and agree that any refund for cancelled or delayed flights,
+baggage fees or seat assignments must come directly from the airline and not from
+ZLTA.
+ZLTA shall not assume any responsibility for any air schedule changes. In rare
+instances, upon departure from a country, certain departure taxes must be paid in cash
+only, and may vary in price. Failure to use a reservation may result in automatic
+cancellation of all continuing and return flights, as well as forfeiture of airfares.
+Airline e-tickets expire a year from issue date unless carrier fare rules in passenger’s
+itinerary fare provide otherwise.
+Due to enhanced security, it is strongly recommended that you check in a minimum of 2
+hours prior to scheduled departure for domestic flights and 3 hours prior to scheduled
+departure time for international flights. Reconfirm flight times at least 24 hours prior to
+scheduled departure time for domestic flights, and 72 hours prior for international flights.
+Frequent Flyer mileage accrual is at the discretion of the airline(s). ZLTA has no liability
+if accrual of miles or points is denied or if upgrades are not allowed. Many airlines do
+not permit upgrades on airfare purchased in certain fare classes or when using frequent
+flyer miles, loyalty status or certificates.
+Seat assignments are not guaranteed even after they are assigned, and ZLTA has no
+control over airline seat assignments. Most airlines charge a fee to pre book a seat.
+LIMITATIONS OF RESPONSIBILITY AND DISCLOSURE
+ZLTA acts solely as a booking agent for disclosed principal Suppliers and is not the
+source or provider of any travel service. Each Supplier is an independent entity with its
+own management and is not subject to the control of ZLTA. The Suppliers whose names
+appear in travel documentation are those actually responsible for providing the travel
+services purchased, and you consent to the use of those Suppliers.
+The Supplier may determine that alterations in itinerary are necessary for any number of
+reasons, including but not limited to severe weather. Any alterations to an itinerary are
+at the sole discretion of the Supplier, and ZLTA bears no responsibility for any changes.
+
+BECAUSE ZLTA ACTS AS AGENT FOR DISCLOSED PRINCIPAL SUPPLIERS AND
+DOES NOT HAVE THE RIGHT TO CONTROL THE OPERATIONS OF SUCH
+INDEPENDENT OPERATORS AND SUPPLIERS, YOU AGREE THAT ZLTA IS NOT
+LIABLE FOR ANY PERSONAL INJURY OR PROPERTY DAMAGE, WHICH MAY
+ARISE OUT OF THESE SERVICES. ZLTA HEREBY DISCLAIMS ANY LIABILITY
+WHETHER BASED ON CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE,
+INCLUDING WITHOUT LIMITATION LIABILITY FOR ANY DIRECT, PUNITIVE,
+SPECIAL CONSEQUENTIAL, INCIDENTAL OR INDIRECT DAMAGES IN
+CONNECTION WITH THE GOODS OR SERVICES PROVIDED BY ANY PRINCIPAL
+SUPPLIER BOOKING THROUGH ZLTA, INCLUDING WITHOUT LIMITATION
+LIABILITY FOR ANY ACT, ERROR, OMISSION, INJURY, LOSS, ACCIDENT, DELAY
+OR IRREGULARITY WHICH MAY BE INCURRED THROUGH THE FAULT,
+NEGLIGENCE, WILLFUL ACTS, OMISSIONS OR OTHERWISE OF SUCH SUPPLIER,
+OR OF ANY SUPPLIER OR THEIR RESPECTIVE EMPLOYEES, AGENTS,
+SERVANTS, OR REPRESENTATIVES, INCLUDING, WITHOUT LIMITATION, THEIR
+FAILURE T0 DELIVER 0R THEIR PARTIAL OR INADEQUATE DELIVERY OF
+SERVICES, THEIR CANCELLATlON AND REFUND POLICIES, FUEL INCREASES,
+BANKRUPTCY, OR CESSATION OF OPERATIONS AND OTHER MATTERS
+OUTSIDE OF ZLTA’S CONTROL, AND YOU HEREBY RELEASE ZLTA FROM ANY
+LIABILITY WITH RESPECT TO THE SAME.
+ZLTA HAS SOLELY RECEIVED COMMISSION AND FEES FOR TRAVEL
+TRANSACTIONS AND CLIENT AGREES AND UNDERSTANDS THAT ANY
+RECOVERY FROM ZLTA WILL BE LIMITED TO THE AMOUNT OF COMMISSION
+AND FEES ACTUALLY RECEIVED BY ZLTA.
+FORCE MAJEURE
+ZLTA will not be in breach of these terms and conditions or otherwise be liable to you,
+for any failure or delay in performing an obligation under this Agreement that is due to
+any of the following causes, to the extent beyond its reasonable control: acts of God,
+accident, riots, war, terrorist act, epidemic, pandemic, quarantine, civil commotion,
+breakdown of communication facilities, including web host and internet service provider,
+breakdown or malfunction of equipment, destruction of or serious damage to facilities,
+natural catastrophes including, but not limited to extreme weather events, floods and
+volcanic eruptions, governmental acts or omissions, changes in laws or regulations,
+national strikes, fire, explosion, generalized lack of availability of raw materials or
+energy, and any other unforeseen circumstance which is beyond the control of ZLTA.
+THE PURCHASE OF TRAVEL INSURANCE IS HIGHLY RECOMMENDED ON ALL
+TRIPS.
+
+In addition, each of ZLTA’s Suppliers have terms and conditions which include Force
+Majeure provisions. In the event that a Force Majeure event occurs, those Suppliers
+may be entitled to, and may in their sole and absolute discretion, vary, postpone or
+cancel any itinerary or arrangement in relation to the trip. Payment of any refund to you
+as a result of the non-performance of any obligations hereunder shall remain in the sole
+and absolute discretion of the Supplier pursuant to their policies, although ZLTA shall
+use its reasonable efforts to secure reimbursement for you where possible.
+CLIENT CONDUCT
+Each participant in any trip escorted by ZLTA is expected to act responsibly and adhere
+to all behavior guidelines established by ZLTA and our Suppliers, including adhering to
+dress codes at religious or cultural sites, or Supplier dress codes. ZLTA and all local
+Suppliers reserve the right to remove you from any facility, hotel or resort property, tour
+location or means of transportation if your health or your conduct appears to endanger
+yourself or others, disrupts the general well-being of other clients on any element of
+your trip, or interferes with the operation or security of the places you visit. In any such
+case, there will be no refund.
+When you book with ZLTA, you accept responsibility for any damage or loss caused by
+you. Full payment for any such damage or loss (reasonably estimated if not precisely
+known) must be paid directly at the time to the accommodation owner or manager or
+other Supplier. You must indemnify ZLTA for the full amount of any claim (also including
+legal costs) made against us. We are not responsible for any costs incurred concerning
+a guest removed from a trip, or any portion of a trip. You agree not to hold ZLTA or any
+of its related entities liable for any actions taken under these terms and conditions.
+Baggage and personal effects are at all times the sole responsibility of the participant.
+Any transportation, possession or use of illegal drugs will result in immediate
+termination of your trip and may result in prosecution by law enforcement authorities.
+You are responsible for knowing and observing the licensing laws for drug possession
+(including prescription and over the counter drugs) for all countries and states you are
+visiting. Laws may require you to carry a prescription from your doctor.
+TRAVEL INSURANCE
+ZLTA OFFERS ACCESS TO TRAVEL INSURANCE TO PROTECT PASSENGERS
+AND THEIR INVESTMENT IN TRAVEL. UNLESS SPECIFICALLY NOTED, TRAVEL
+INSURANCE IS NOT INCLUDED IN THE COST OF CLIENT’S ITINERARY TO
+PROTECT AGAINST THIRD PARTY SUPPLIER DEFAULT/BANKRUPTCY
+PROTECTION, DELAY, INTERRUPTION, MISSED CONNECTION FOR CRUISES,
+CANCELLATION, MEDICAL EMERGENCY TRANSPORTATION/EVACUATION &amp;
+REPATRIATION, BAGGAGE &amp; PERSONAL EFFECTS/LOST LUGGAGE &amp; BAGGAGE
+
+DELAY, ILLNESS, JOB LOSS PROTECTION AND CHANGE OF PLANS,
+ACCIDENTAL DEATH AND DISABILITY, TRAVEL ACCIDENT/SICKNESS MEDICAL
+EXPENSES, AND MORE. PROPER INSURANCE MAY PROTECT YOU FROM
+FINANCIAL LOSS IN ALMOST ALL CIRCUMSTANCES. Without appropriate travel
+insurance, you understand and agree that if you cancel or interrupt your travel for any
+reason, portions of the trip/tour may not be refunded and ZLTA’s and travel Suppliers’
+cancellation penalties will apply resulting in the loss of monies up to the full cost of
+Client’s travel booking and related costs. The purchase of travel insurance is not
+required in order to purchase any other product or service offered by ZLTA, however if
+you decline to purchase insurance, ZLTA may require that you execute an insurance
+waiver. ZLTA is not a licensed insurance broker, and its advisors are not qualified or
+authorized to answer technical questions about benefits, exclusions, and conditions of
+any of the insurance offered, nor evaluate the adequacy of the prospective insured’s
+existing insurance coverage. An additional charge applies for any travel insurance
+selected. It is your responsibility to know what your insurance policy covers, and to put
+alternative coverage in place, if you wish to insure for conditions that are excluded by
+your policy. ZLTA CANNOT GUARANTEE THAT ANY INSURANCE PROVIDER WILL
+APPROVE COVERAGE FOR A CLAIM MADE UNDER THE INSURER’S POLICY AND
+MAKES NO REPRESENTATIONS ABOUT THE EXTENT OF COVERAGE FOR ANY
+POLICY IT MAY OFFER OR QUOTE.
+RESERVATION OF RIGHTS AND CHANGES TO THESE TERMS
+We reserve the right, in our sole discretion, to change these Terms and Conditions at
+any time. Updated versions of the Terms will be provided to Clients, will be posted on
+our website and are effective immediately on posting.
+GENERAL
+The laws of the State of Iowa govern these Terms and Conditions. You hereby consent
+to the exclusive jurisdiction and venue of courts in Polk County, Iowa in all disputes
+arising out of or relating to travel bookings with ZLTA. Any claim against ZLTA must be
+brought within 12 months after the date of the completion of the trip and not later. ZLTA
+shall not in any case be liable for damages other than compensatory damages, and you
+waive any right to claim punitive or exemplary damages. You agree that you may only
+bring claims in your individual capacity and not as plaintiffs or class members in any
+class action, proposed or purported class action, or other representative action,
+regardless of the type of proceeding. You expressly agree to waive and forego any and
+all rights to bring any such class actions, purported or proposed class actions, or
+representative actions.
+If any part of these Terms and Conditions is determined to be invalid or unenforceable
+pursuant to applicable law including, but not limited to, the warranty disclaimers and
+
+liability limitations set forth above, then the invalid or unenforceable provision will be
+deemed superseded by a valid, enforceable provision that most closely matches the
+intent of the original provision and agreement shall continue in effect.
+These Terms and Conditions (and any other terms and conditions referenced herein)
+constitute the entire agreement between the Client and ZLTA with respect to travel
+bookings made with ZLTA by any means, and it supersedes all prior or
+contemporaneous communications and proposals, whether electronic, oral, or written,
+between Client and ZLTA with respect to communications with ZLTA. A printed version
+of this agreement and of any notice given in electronic form shall be admissible in
+judicial or administrative proceedings based upon or relating to these Terms and
+Conditions to the same extent and subject to the same conditions as other business
+documents and records originally generated and maintained in printed form.
