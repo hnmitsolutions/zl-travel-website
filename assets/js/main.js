@@ -561,6 +561,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const popupMsg = popupForm?.querySelector(".form-msg");
     let popupOpen = false;
 
+    const setChatHidden = (hidden) => {
+      document.documentElement.classList.toggle("popup-open", hidden);
+      document.querySelectorAll(
+        "#leadconnector-chat, iframe[src*='leadconnector'], iframe[src*='msgsndr'], [class*='lc_text-widget'], [id*='chat-widget']"
+      ).forEach((el) => {
+        el.style.setProperty("display", hidden ? "none" : "", "important");
+        el.style.setProperty("pointer-events", hidden ? "none" : "", "important");
+      });
+    };
+
     const openPopup = () => {
       if (popupOpen || sessionStorage.getItem(SCROLL_POPUP_KEY)) return;
       popupOpen = true;
@@ -568,13 +578,15 @@ document.addEventListener("DOMContentLoaded", () => {
       scrollPopup.hidden = false;
       scrollPopup.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
-      scrollPopup.querySelector("#spf-fn")?.focus();
+      setChatHidden(true);
+      scrollPopup.querySelector(".scroll-popup__close")?.focus();
     };
 
     const closePopup = () => {
       scrollPopup.hidden = true;
       scrollPopup.setAttribute("aria-hidden", "true");
       document.body.style.overflow = "";
+      setChatHidden(false);
       popupOpen = false;
     };
 

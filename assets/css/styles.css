@@ -333,33 +333,40 @@ body:has(.hero) .hero::after{
 .form-success .form-book-btn{width:100%;justify-content:center}
 
 /* Home scroll popup -------------------------------------------------------- */
-.scroll-popup{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:24px}
+.scroll-popup{position:fixed;inset:0;z-index:1200;display:grid;place-items:center;padding:24px;
+  padding:max(16px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left))}
 .scroll-popup[hidden]{display:none}
 .scroll-popup__overlay{position:absolute;inset:0;background:rgba(4,14,26,.72);backdrop-filter:blur(4px)}
-.scroll-popup__panel{position:relative;width:min(100%,480px);background:var(--ink-1);border:1px solid var(--line-dark);
-  border-radius:6px;padding:42px 38px 38px;box-shadow:var(--shadow);animation:popup-in .45s var(--ease) both}
-.scroll-popup__close{position:absolute;top:14px;right:14px;width:40px;height:40px;border:0;background:transparent;
-  color:var(--on-dark-muted);font-size:1.3rem;cursor:pointer;border-radius:50%;transition:color .3s,background .3s}
-.scroll-popup__close:hover{color:#fff;background:rgba(255,255,255,.06)}
+.scroll-popup__panel{position:relative;z-index:1;width:min(100%,480px);max-height:min(92vh,720px);overflow:auto;
+  background:var(--ink-1);border:1px solid var(--line-dark);
+  border-radius:6px;padding:48px 38px 38px;box-shadow:var(--shadow);animation:popup-in .45s var(--ease) both;
+  -webkit-overflow-scrolling:touch}
+.scroll-popup__close{position:absolute;top:10px;right:10px;z-index:5;width:44px;height:44px;border:0;
+  background:rgba(255,255,255,.12);color:#fff;font-size:1.85rem;line-height:1;font-weight:300;cursor:pointer;border-radius:50%;
+  display:grid;place-items:center;transition:color .3s,background .3s;box-shadow:0 2px 10px rgba(0,0,0,.25);
+  -webkit-tap-highlight-color:rgba(201,162,75,.35)}
+.scroll-popup__close:hover,.scroll-popup__close:focus-visible{color:#fff;background:rgba(201,162,75,.4);outline:none}
+.scroll-popup__body{clear:both}
 .scroll-popup__body h3{margin:10px 0 12px;font-size:clamp(1.6rem,4vw,2rem)}
 .scroll-popup__body>p{color:var(--on-dark-muted);font-size:.94rem;margin-bottom:22px}
 .scroll-popup__body .btn{width:100%;justify-content:center;margin-top:4px}
-.scroll-popup__thanks{text-align:center;padding:18px 8px}
+.scroll-popup__thanks{text-align:center;padding:18px 8px;clear:both}
 .scroll-popup__thanks .k{display:block;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold-2);margin-bottom:10px}
 .scroll-popup__thanks h3{margin-bottom:10px}
 .scroll-popup__thanks p{color:var(--on-dark-muted);font-size:.95rem}
 @keyframes popup-in{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
 
 /* Booking modal ------------------------------------------------------------ */
-.booking-modal{position:fixed;inset:0;z-index:210;display:grid;place-items:center;padding:24px}
+.booking-modal{position:fixed;inset:0;z-index:1210;display:grid;place-items:center;padding:24px}
 .booking-modal[hidden]{display:none}
 .booking-modal__overlay{position:absolute;inset:0;background:rgba(4,14,26,.78);backdrop-filter:blur(4px)}
-.booking-modal__panel{position:relative;width:min(100%,520px);max-height:min(92vh,720px);overflow:auto;
-  background:var(--ink-1);border:1px solid var(--line-dark);border-radius:6px;padding:42px 38px 38px;
-  box-shadow:var(--shadow);animation:popup-in .45s var(--ease) both}
-.booking-modal__close{position:absolute;top:14px;right:14px;width:40px;height:40px;border:0;background:transparent;
-  color:var(--on-dark-muted);font-size:1.3rem;cursor:pointer;border-radius:50%;transition:color .3s,background .3s}
-.booking-modal__close:hover{color:#fff;background:rgba(255,255,255,.06)}
+.booking-modal__panel{position:relative;z-index:1;width:min(100%,520px);max-height:min(92vh,720px);overflow:auto;
+  background:var(--ink-1);border:1px solid var(--line-dark);border-radius:6px;padding:48px 38px 38px;
+  box-shadow:var(--shadow);animation:popup-in .45s var(--ease) both;-webkit-overflow-scrolling:touch}
+.booking-modal__close{position:absolute;top:10px;right:10px;z-index:5;width:44px;height:44px;border:0;
+  background:rgba(255,255,255,.12);color:#fff;font-size:1.85rem;line-height:1;font-weight:300;cursor:pointer;border-radius:50%;
+  display:grid;place-items:center;transition:color .3s,background .3s;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.booking-modal__close:hover,.booking-modal__close:focus-visible{color:#fff;background:rgba(201,162,75,.4);outline:none}
 .booking-modal__body h3{margin:10px 0 8px;font-size:clamp(1.5rem,4vw,1.9rem)}
 .booking-modal__sub{color:var(--on-dark-muted);font-size:.94rem;margin-bottom:22px}
 .booking-times{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
@@ -369,21 +376,31 @@ body:has(.hero) .hero::after{
 .booking-modal__body .btn{width:100%;justify-content:center;margin-top:8px}
 
 /* Booking success popup ---------------------------------------------------- */
-.booking-success-popup{position:fixed;inset:0;z-index:220;display:grid;place-items:center;padding:24px}
+.booking-success-popup{position:fixed;inset:0;z-index:1220;display:grid;place-items:center;padding:24px}
 .booking-success-popup[hidden]{display:none}
 .booking-success-popup__overlay{position:absolute;inset:0;background:rgba(4,14,26,.82);backdrop-filter:blur(5px)}
-.booking-success-popup__panel{position:relative;width:min(100%,460px);text-align:center;background:var(--ink-1);
+.booking-success-popup__panel{position:relative;z-index:1;width:min(100%,460px);text-align:center;background:var(--ink-1);
   border:1px solid var(--line-dark);border-radius:6px;padding:48px 38px 40px;box-shadow:var(--shadow);animation:popup-in .45s var(--ease) both}
-.booking-success-popup__close{position:absolute;top:14px;right:14px;width:40px;height:40px;border:0;background:transparent;
-  color:var(--on-dark-muted);font-size:1.3rem;cursor:pointer;border-radius:50%;transition:color .3s,background .3s}
-.booking-success-popup__close:hover{color:#fff;background:rgba(255,255,255,.06)}
+.booking-success-popup__close{position:absolute;top:12px;right:12px;z-index:5;width:44px;height:44px;border:0;
+  background:rgba(255,255,255,.1);color:#fff;font-size:1.45rem;cursor:pointer;border-radius:50%;
+  display:grid;place-items:center;transition:color .3s,background .3s}
+.booking-success-popup__close:hover,.booking-success-popup__close:focus-visible{color:#fff;background:rgba(201,162,75,.35);outline:none}
 .booking-success-popup__panel .k{display:block;font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold-2);margin-bottom:12px}
 .booking-success-popup__panel h3{margin-bottom:12px;font-size:clamp(1.6rem,4vw,2rem)}
 .booking-success-popup__panel p{color:var(--on-dark-muted);font-size:.95rem;margin-bottom:24px;line-height:1.55}
 .booking-success-popup__panel .btn{width:100%;justify-content:center}
 
+/* Hide chat while site modals are open (chat widgets often sit above everything) */
+html.popup-open iframe[src*="leadconnector"],
+html.popup-open iframe[src*="msgsndr"],
+html.popup-open [id*="chat-widget"],
+html.popup-open [class*="lc_text-widget"],
+html.popup-open #leadconnector-chat{
+  display:none!important;visibility:hidden!important;pointer-events:none!important;
+}
+
 /* Footer ------------------------------------------------------------------- */
-.footer{background:var(--ink);padding:90px 0 34px;border-top:1px solid var(--line-dark)}
+.footer{background:var(--ink);padding:90px 0 34px;border-top:1px solid var(--line-dark);position:relative;z-index:2}
 .footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:56px}
 .footer img.logo{
   height:110px;margin-bottom:22px;background:transparent;padding:0;border:none;border-radius:0;
@@ -391,8 +408,8 @@ body:has(.hero) .hero::after{
 }
 .footer p{color:var(--on-dark-muted);font-size:.95rem;max-width:42ch}
 .footer h4{font-family:var(--f-body);font-size:.74rem;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-2);margin-bottom:22px}
-.footer__links{display:grid;gap:13px}
-.footer__links a{color:var(--on-dark-muted);font-size:.95rem;transition:color .3s}
+.footer__links{display:grid;gap:13px;position:relative;z-index:2}
+.footer__links a{color:var(--on-dark-muted);font-size:.95rem;transition:color .3s;display:inline-flex;align-items:center;min-height:44px;padding:4px 0;position:relative;z-index:2;-webkit-tap-highlight-color:rgba(201,162,75,.25)}
 .footer__links a:hover{color:#fff}
 .footer__links i{color:var(--teal-2);margin-right:9px}
 .socials{display:flex;gap:12px;margin-top:26px}
@@ -400,8 +417,8 @@ body:has(.hero) .hero::after{
 .socials a:hover{border-color:var(--gold);color:var(--gold-2);transform:translateY(-4px)}
 .footer__bottom{margin-top:60px;padding-top:26px;border-top:1px solid var(--line-dark);display:flex;
   justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.82rem;color:var(--on-dark-muted);align-items:center}
-.footer__legal{display:flex;gap:22px;flex-wrap:wrap}
-.footer__legal a{color:var(--on-dark-muted);transition:color .3s}
+.footer__legal{display:flex;gap:18px 22px;flex-wrap:wrap;position:relative;z-index:2}
+.footer__legal a{color:var(--on-dark-muted);transition:color .3s;display:inline-flex;align-items:center;min-height:44px;padding:4px 0;position:relative;z-index:2;-webkit-tap-highlight-color:rgba(201,162,75,.25)}
 .footer__legal a:hover{color:var(--gold-2)}
 
 /* Legal pages -------------------------------------------------------------- */
@@ -518,8 +535,15 @@ body:has(.hero) .hero::after{
   .header.scrolled .brand img{height:60px}
   body:has(.hero) .brand img{height:110px}
   body:has(.hero) .header.scrolled .brand img{height:60px}
-  .scroll-popup{padding:16px}
-  .scroll-popup__panel{padding:34px 24px 28px}
+  /* Clear chat widget + back-to-top so footer legal links stay tappable */
+  .footer{padding-bottom:120px}
+  .footer__bottom{flex-direction:column;align-items:flex-start;gap:10px}
+  .totop{right:18px;bottom:96px}
+  .scroll-popup{padding:12px;align-items:start;overflow:auto}
+  .scroll-popup__panel{padding:56px 18px 28px;max-height:none;width:100%;margin:12px 0 24px}
+  .scroll-popup__close{top:8px;right:8px;width:48px;height:48px;
+    background:rgba(201,162,75,.35);border:1px solid rgba(201,162,75,.65)}
+  .scroll-popup__body{padding-top:0}
   .booking-modal{padding:16px}
   .booking-modal__panel{padding:34px 24px 28px}
   .booking-success-popup{padding:16px}
