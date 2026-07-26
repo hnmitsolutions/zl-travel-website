@@ -361,7 +361,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /* Sticky header + back-to-top */
   const onScroll = () => {
     const y = window.scrollY;
-    header.classList.toggle("scrolled", y > 40);
+    header?.classList.toggle("scrolled", y > 40);
     if (toTop) toTop.classList.toggle("show", y > 700);
     parallax(y);
   };
@@ -381,9 +381,63 @@ document.addEventListener("DOMContentLoaded", () => {
   /* Mobile nav */
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".nav");
-  if (toggle){
-    toggle.addEventListener("click", () => nav.classList.toggle("open"));
-    nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => nav.classList.remove("open")));
+  const closeMobileNav = () => {
+    if (!nav || !toggle) return;
+    nav.classList.remove("open");
+    header?.classList.remove("nav-open");
+    document.body.classList.remove("nav-open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "Menu");
+    const icon = toggle.querySelector("i");
+    if (icon) icon.className = "ti ti-menu-2";
+  };
+  const openMobileNav = () => {
+    if (!nav || !toggle) return;
+    nav.classList.add("open");
+    header?.classList.add("nav-open");
+    document.body.classList.add("nav-open");
+    toggle.setAttribute("aria-expanded", "true");
+    toggle.setAttribute("aria-label", "Close menu");
+    const icon = toggle.querySelector("i");
+    if (icon) icon.className = "ti ti-x";
+  };
+  if (toggle && nav){
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-controls", "primary-nav");
+    if (!nav.id) nav.id = "primary-nav";
+
+    // Mobile menu CTA (mirrors header button)
+    if (!nav.querySelector(".nav-mobile-cta")) {
+      const headerCta = header?.querySelector(".nav-cta .btn");
+      const mobileCta = document.createElement("a");
+      mobileCta.className = "nav-mobile-cta";
+      mobileCta.href = headerCta?.getAttribute("href") || "contact.html";
+      mobileCta.textContent = headerCta?.textContent?.trim() || "Start planning";
+      nav.appendChild(mobileCta);
+    }
+
+    toggle.addEventListener("click", (ev) => {
+      ev.stopPropagation();
+      if (nav.classList.contains("open")) closeMobileNav();
+      else openMobileNav();
+    });
+    nav.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMobileNav));
+    document.addEventListener("keydown", (ev) => {
+      if (ev.key === "Escape") closeMobileNav();
+    });
+    document.addEventListener("click", (ev) => {
+      if (!nav.classList.contains("open")) return;
+      if (header && !header.contains(ev.target)) closeMobileNav();
+    });
+    let lastY = window.scrollY;
+    window.addEventListener("scroll", () => {
+      const y = window.scrollY;
+      if (nav.classList.contains("open") && Math.abs(y - lastY) > 8) closeMobileNav();
+      lastY = y;
+    }, { passive: true });
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 920) closeMobileNav();
+    });
   }
   if (toTop) toTop.addEventListener("click", () => window.scrollTo({ top:0, behavior:"smooth" }));
 
