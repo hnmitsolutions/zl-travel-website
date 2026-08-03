@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Specials Admin — ZL Travel Agency</title>
+<link rel="icon" href="/logo-header.png">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: #F7F2E9;
+  color: #1B2B3A;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+:root {
+  --espresso: #08192A;
+  --gold: #C9A24B;
+  --gold-light: #D8B96B;
+  --ivory: #F7F2E9;
+  --muted: #5B6B7A;
+  --border: #E0D4BE;
+  --danger: #b91c1c;
+}
+h1, h2, h3 { font-family: Fraunces, Georgia, serif; font-weight: 400; line-height: 1.2; }
+h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); }
+h2 { font-size: 1.35rem; }
+p { font-size: 14px; color: var(--muted); }
+a { color: inherit; }
+.eyebrow {
+  font-size: 11px; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--gold); margin-bottom: 8px;
+}
+.gold-rule { width: 48px; height: 2px; background: var(--gold); margin: 10px 0 18px; }
+.gold-rule.center { margin: 10px auto 18px; }
+.text-center { text-align: center; }
+
+.top-bar {
+  background: var(--espresso);
+  border-bottom: 1px solid rgba(201,160,74,.2);
+  padding: 18px 24px;
+}
+.top-bar-inner {
+  max-width: 920px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+}
+.top-bar-brand { display: flex; align-items: center; gap: 13px; }
+.top-bar img { height: 52px; width: auto; object-fit: contain; }
+.top-bar-title { font-family: Fraunces, Georgia, serif; font-size: 1.15rem; color: #DCE6EF; }
+.top-bar-sub { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); }
+.top-bar-links { display: flex; gap: 14px; flex-wrap: wrap; }
+.top-bar-links a {
+  font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+  color: rgba(220,230,239,.75); text-decoration: none;
+}
+.top-bar-links a:hover { color: var(--gold); }
+
+.page-wrap { max-width: 920px; margin: 0 auto; padding: 40px 20px 80px; }
+.card {
+  background: #fff; border: 1px solid var(--border); border-radius: 6px;
+  padding: 28px 24px; box-shadow: 0 8px 30px rgba(8,25,42,.06);
+}
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  border: 0; cursor: pointer; font-family: Inter, sans-serif; font-size: 12px;
+  font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 12px 18px; border-radius: 3px; transition: .2s background, .2s transform;
+}
+.btn-primary { background: var(--gold); color: var(--espresso); }
+.btn-primary:hover { background: var(--gold-light); }
+.btn-dark { background: var(--espresso); color: #fff; }
+.btn-dark:hover { background: #123049; }
+.btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--espresso); }
+.btn-danger { background: #fff0f0; color: var(--danger); border: 1px solid #f3c1c1; }
+.btn-block { width: 100%; }
+.btn:disabled { opacity: .55; cursor: not-allowed; }
+
+.form-label {
+  display: block; font-size: 11px; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 6px;
+}
+.form-input, .form-textarea, .form-select {
+  width: 100%; border: 1px solid var(--border); border-radius: 4px;
+  padding: 12px 14px; font: inherit; background: #fff; color: var(--espresso);
+}
+.form-textarea { min-height: 110px; resize: vertical; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.field { margin-bottom: 14px; }
+.pin-input { max-width: 260px; margin: 0 auto 14px; text-align: center; letter-spacing: 0.2em; font-size: 1.2rem; }
+
+.alert { display: none; padding: 12px 14px; border-radius: 4px; margin-bottom: 16px; font-size: 13px; }
+.alert.show { display: block; }
+.alert-error { background: #fff0f0; border: 1px solid #e05252; color: #b91c1c; }
+.alert-success { background: #f0faf4; border: 1px solid #6abf8a; color: #1d6b3a; }
+.alert-info { background: rgba(201,160,74,.12); border: 1px solid rgba(201,160,74,.35); color: #5C4A38; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 22px; }
+.list { display: grid; gap: 14px; }
+.item {
+  display: grid; grid-template-columns: 96px 1fr auto; gap: 14px; align-items: center;
+  border: 1px solid var(--border); border-radius: 6px; padding: 12px; background: #fff;
+}
+.item img {
+  width: 96px; height: 72px; object-fit: cover; border-radius: 4px; background: #eee;
+}
+.item h3 { font-size: 1.05rem; margin-bottom: 4px; }
+.item p { font-size: 13px; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.item-actions { display: flex; flex-direction: column; gap: 8px; }
+.badge {
+  display: inline-block; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 4px;
+}
+.badge.off { color: var(--danger); }
+.preview {
+  margin-top: 10px; border: 1px dashed var(--border); border-radius: 4px;
+  padding: 10px; background: var(--ivory); display: none;
+}
+.preview.show { display: block; }
+.preview img { max-width: 100%; max-height: 220px; margin: 0 auto; }
+.help { font-size: 12px; color: var(--muted); margin-top: 8px; }
+.hidden { display: none !important; }
+@media (max-width: 700px) {
+  .form-row, .item { grid-template-columns: 1fr; }
+  .item-actions { flex-direction: row; flex-wrap: wrap; }
+}
+</style>
+</head>
+<body>
+
+<header class="top-bar">
+  <div class="top-bar-inner">
+    <div class="top-bar-brand">
+      <img src="/logo-header.png" alt="ZL Travel Agency" />
+      <div>
+        <div class="top-bar-title">ZL Travel Agency</div>
+        <div class="top-bar-sub">Specials Admin</div>
+      </div>
+    </div>
+    <div class="top-bar-links">
+      <a href="/specials.html" target="_blank" rel="noopener">View public page</a>
+      <a href="/agent.html">Agent form</a>
+    </div>
+  </div>
+</header>
+
+<main class="page-wrap">
+
+  <section id="pinGate" class="card text-center">
+    <p class="eyebrow">Private Access</p>
+    <h1>Specials Admin</h1>
+    <div class="gold-rule center"></div>
+    <p>Enter your admin PIN to manage travel specials on the website.</p>
+    <div id="pinError" class="alert alert-error" role="alert"></div>
+    <form id="pinForm" autocomplete="off">
+      <label class="form-label" for="adminPin" style="max-width:260px;margin:0 auto 6px;text-align:left;">PIN</label>
+      <input class="form-input pin-input" type="password" id="adminPin" inputmode="numeric" maxlength="12" placeholder="••••" required autofocus />
+      <button type="submit" class="btn btn-primary btn-block" style="max-width:260px;margin:0 auto;">Continue</button>
+    </form>
+  </section>
+
+  <section id="adminApp" class="hidden">
+    <div class="card" style="margin-bottom:20px;">
+      <p class="eyebrow">Manage promotions</p>
+      <h1>Travel Specials</h1>
+      <div class="gold-rule"></div>
+      <p>Upload flyer images, add deal details, then publish. Publishing updates the live Specials page after you replace <code>specials/data.json</code> (download below) and deploy — or use Preview on this browser.</p>
+      <div id="statusMsg" class="alert" role="status"></div>
+      <div class="toolbar">
+        <button type="button" class="btn btn-primary" id="btnNew">+ Add special</button>
+        <button type="button" class="btn btn-dark" id="btnPublish">Publish &amp; download JSON</button>
+        <button type="button" class="btn btn-ghost" id="btnPreview">Preview on site</button>
+        <button type="button" class="btn btn-ghost" id="btnReload">Reload from site file</button>
+      </div>
+      <div class="alert alert-info show">
+        <strong>How publishing works:</strong> Click <em>Publish &amp; download JSON</em>, then replace the file <code>specials/data.json</code> in your project with the downloaded file and deploy. Use <em>Preview on site</em> to check changes in this browser before deploying.
+      </div>
+    </div>
+
+    <div id="editorCard" class="card hidden" style="margin-bottom:20px;">
+      <h2 id="editorTitle">Add special</h2>
+      <div class="gold-rule"></div>
+      <form id="specialForm">
+        <input type="hidden" id="editId" />
+        <div class="form-row">
+          <div class="field">
+            <label class="form-label" for="title">Title</label>
+            <input class="form-input" id="title" required placeholder="Secrets Moxché — Playa del Carmen" />
+          </div>
+          <div class="field">
+            <label class="form-label" for="tag">Tag</label>
+            <input class="form-input" id="tag" placeholder="Limited-Time Offer" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="form-label" for="description">Description</label>
+          <textarea class="form-textarea" id="description" required placeholder="Short summary of the deal..."></textarea>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label class="form-label" for="expires">Expires (optional)</label>
+            <input class="form-input" id="expires" placeholder="Aug 31, 2026" />
+          </div>
+          <div class="field">
+            <label class="form-label" for="active">Status</label>
+            <select class="form-select" id="active">
+              <option value="true">Active (visible)</option>
+              <option value="false">Hidden</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label class="form-label" for="imageFile">Flyer / image upload</label>
+          <input class="form-input" type="file" id="imageFile" accept="image/*,.pdf" />
+          <p class="help">Uploads to your LeadConnector media library. Or paste an image URL below.</p>
+        </div>
+        <div class="field">
+          <label class="form-label" for="imageUrl">Image URL</label>
+          <input class="form-input" id="imageUrl" placeholder="https://… or /assets/img/…" />
+          <div class="preview" id="imagePreview"><img alt="Preview" /></div>
+        </div>
+        <div class="toolbar">
+          <button type="submit" class="btn btn-primary" id="btnSaveItem">Save special</button>
+          <button type="button" class="btn btn-ghost" id="btnCancelEdit">Cancel</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Current specials</h2>
+      <div class="gold-rule"></div>
+      <div id="specialsList" class="list"></div>
+    </div>
+  </section>
+</main>
+
+<script src="/specials/loader.js"></script>
+<script>
+(function () {
+  const ADMIN_PIN = "8842";
+  const GHL_MEDIA_UPLOAD = "https://services.leadconnectorhq.com/medias/upload-file";
+  const GHL_MEDIA_TOKEN = "pit-07adb255-86ef-4900-8be0-35552387c657";
+  const STORAGE_KEY = (window.ZLSpecials && ZLSpecials.STORAGE_KEY) || "zl_specials_data";
+  const PREVIEW_FLAG = (window.ZLSpecials && ZLSpecials.PREVIEW_FLAG) || "zl_specials_preview";
+
+  const $pinGate = document.getElementById("pinGate");
+  const $adminApp = document.getElementById("adminApp");
+  const $pinForm = document.getElementById("pinForm");
+  const $pinError = document.getElementById("pinError");
+  const $list = document.getElementById("specialsList");
+  const $status = document.getElementById("statusMsg");
+  const $editor = document.getElementById("editorCard");
+  const $form = document.getElementById("specialForm");
+  const $preview = document.getElementById("imagePreview");
+  const $previewImg = $preview.querySelector("img");
+
+  let specials = [];
+  let unlocked = sessionStorage.getItem("zl_specials_admin") === "1";
+
+  function showAlert(el, msg, type) {
+    el.className = "alert show alert-" + (type || "info");
+    el.textContent = msg;
+  }
+  function clearAlert(el) {
+    el.className = "alert";
+    el.textContent = "";
+  }
+  function slugify(str) {
+    return String(str || "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "")
+      .slice(0, 60) || ("special-" + Date.now());
+  }
+  function uid() {
+    return "sp_" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+  }
+  function payload() {
+    return { updated_at: new Date().toISOString(), specials: specials };
+  }
+  function persistLocal() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(payload()));
+  }
+  function escapeHtml(str) {
+    return String(str || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  async function uploadImage(file) {
+    const body = new FormData();
+    body.append("file", file, file.name);
+    body.append("name", file.name);
+    const res = await fetch(GHL_MEDIA_UPLOAD, {
+      method: "POST",
+      headers: {
+        Authorization: "Bearer " + GHL_MEDIA_TOKEN,
+        Version: "2021-07-28",
+      },
+      body,
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) {
+      throw new Error(data.message || data.error || "Image upload failed (HTTP " + res.status + ").");
+    }
+    const url =
+      data.url ||
+      data.fileUrl ||
+      data.link ||
+      data?.file?.url ||
+      data?.data?.url ||
+      data?.uploadedFiles?.[0]?.url ||
+      "";
+    if (!url) throw new Error("Upload succeeded but no image URL was returned.");
+    return url;
+  }
+
+  function renderList() {
+    if (!specials.length) {
+      $list.innerHTML = '<p>No specials yet. Click “Add special” to create your first deal.</p>';
+      return;
+    }
+    const sorted = specials.slice().sort((a, b) => String(b.created_at || "").localeCompare(String(a.created_at || "")));
+    $list.innerHTML = sorted
+      .map(function (item) {
+        return (
+          '<article class="item" data-id="' + escapeHtml(item.id) + '">' +
+            (item.image_url
+              ? '<img src="' + escapeHtml(item.image_url) + '" alt="">'
+              : '<div style="width:96px;height:72px;background:#eee;border-radius:4px;"></div>') +
+            "<div>" +
+              '<div class="badge' + (item.active === false ? " off" : "") + '">' +
+                (item.active === false ? "Hidden" : escapeHtml(item.tag || "Active")) +
+              "</div>" +
+              "<h3>" + escapeHtml(item.title) + "</h3>" +
+              "<p>" + escapeHtml(item.description) + "</p>" +
+            "</div>" +
+            '<div class="item-actions">' +
+              '<button type="button" class="btn btn-ghost" data-edit="' + escapeHtml(item.id) + '">Edit</button>' +
+              '<button type="button" class="btn btn-danger" data-del="' + escapeHtml(item.id) + '">Delete</button>' +
+            "</div>" +
+          "</article>"
+        );
+      })
+      .join("");
+  }
+
+  function openEditor(item) {
+    $editor.classList.remove("hidden");
+    document.getElementById("editorTitle").textContent = item ? "Edit special" : "Add special";
+    document.getElementById("editId").value = item?.id || "";
+    document.getElementById("title").value = item?.title || "";
+    document.getElementById("tag").value = item?.tag || "Limited-Time Offer";
+    document.getElementById("description").value = item?.description || "";
+    document.getElementById("expires").value = item?.expires || "";
+    document.getElementById("active").value = item?.active === false ? "false" : "true";
+    document.getElementById("imageUrl").value = item?.image_url || "";
+    document.getElementById("imageFile").value = "";
+    updatePreview(item?.image_url || "");
+    $editor.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function closeEditor() {
+    $editor.classList.add("hidden");
+    $form.reset();
+    document.getElementById("editId").value = "";
+    updatePreview("");
+  }
+
+  function updatePreview(url) {
+    if (url) {
+      $previewImg.src = url;
+      $preview.classList.add("show");
+    } else {
+      $preview.classList.remove("show");
+      $previewImg.removeAttribute("src");
+    }
+  }
+
+  async function loadInitial() {
+    try {
+      const local = localStorage.getItem(STORAGE_KEY);
+      if (local) {
+        const parsed = JSON.parse(local);
+        specials = Array.isArray(parsed.specials) ? parsed.specials : [];
+      } else if (window.ZLSpecials) {
+        const data = await ZLSpecials.fetchDataJson();
+        specials = Array.isArray(data.specials) ? data.specials : [];
+        persistLocal();
+      }
+    } catch (_) {
+      specials = [];
+    }
+    renderList();
+  }
+
+  function unlock() {
+    unlocked = true;
+    sessionStorage.setItem("zl_specials_admin", "1");
+    $pinGate.classList.add("hidden");
+    $adminApp.classList.remove("hidden");
+    loadInitial();
+  }
+
+  $pinForm.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    clearAlert($pinError);
+    if (document.getElementById("adminPin").value.trim() === ADMIN_PIN) unlock();
+    else showAlert($pinError, "Incorrect PIN.", "error");
+  });
+
+  document.getElementById("btnNew").addEventListener("click", function () {
+    openEditor(null);
+  });
+  document.getElementById("btnCancelEdit").addEventListener("click", closeEditor);
+
+  document.getElementById("imageUrl").addEventListener("input", function (ev) {
+    updatePreview(ev.target.value.trim());
+  });
+
+  document.getElementById("imageFile").addEventListener("change", async function (ev) {
+    const file = ev.target.files && ev.target.files[0];
+    if (!file) return;
+    const btn = document.getElementById("btnSaveItem");
+    btn.disabled = true;
+    showAlert($status, "Uploading image…", "info");
+    try {
+      const url = await uploadImage(file);
+      document.getElementById("imageUrl").value = url;
+      updatePreview(url);
+      showAlert($status, "Image uploaded.", "success");
+    } catch (err) {
+      showAlert($status, err.message || "Upload failed.", "error");
+    } finally {
+      btn.disabled = false;
+    }
+  });
+
+  $form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    const id = document.getElementById("editId").value || uid();
+    const title = document.getElementById("title").value.trim();
+    const item = {
+      id,
+      slug: slugify(title),
+      title,
+      description: document.getElementById("description").value.trim(),
+      tag: document.getElementById("tag").value.trim() || "Limited-Time Offer",
+      expires: document.getElementById("expires").value.trim(),
+      image_url: document.getElementById("imageUrl").value.trim(),
+      active: document.getElementById("active").value === "true",
+      created_at: specials.find((s) => s.id === id)?.created_at || new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    };
+    const idx = specials.findIndex((s) => s.id === id);
+    if (idx >= 0) specials[idx] = item;
+    else specials.unshift(item);
+    persistLocal();
+    renderList();
+    closeEditor();
+    showAlert($status, "Special saved locally. Click Publish & download JSON to update the live site file.", "success");
+  });
+
+  $list.addEventListener("click", function (ev) {
+    const editId = ev.target.getAttribute("data-edit");
+    const delId = ev.target.getAttribute("data-del");
+    if (editId) {
+      const item = specials.find((s) => s.id === editId);
+      if (item) openEditor(item);
+    }
+    if (delId) {
+      if (!confirm("Delete this special?")) return;
+      specials = specials.filter((s) => s.id !== delId);
+      persistLocal();
+      renderList();
+      showAlert($status, "Special deleted. Publish to update the live site file.", "success");
+    }
+  });
+
+  document.getElementById("btnPublish").addEventListener("click", function () {
+    persistLocal();
+    const blob = new Blob([JSON.stringify(payload(), null, 2)], { type: "application/json" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "data.json";
+    a.click();
+    URL.revokeObjectURL(a.href);
+    showAlert(
+      $status,
+      "Downloaded data.json. Replace specials/data.json in your project with this file, then deploy to Vercel.",
+      "success"
+    );
+  });
+
+  document.getElementById("btnPreview").addEventListener("click", function () {
+    persistLocal();
+    sessionStorage.setItem(PREVIEW_FLAG, "1");
+    window.open("/specials.html", "_blank", "noopener");
+    showAlert($status, "Preview opened. This browser will show your draft specials on /specials.", "info");
+  });
+
+  document.getElementById("btnReload").addEventListener("click", async function () {
+    try {
+      sessionStorage.removeItem(PREVIEW_FLAG);
+      const data = await ZLSpecials.fetchDataJson();
+      specials = Array.isArray(data.specials) ? data.specials : [];
+      persistLocal();
+      renderList();
+      showAlert($status, "Reloaded from specials/data.json.", "success");
+    } catch (err) {
+      showAlert($status, err.message || "Could not reload.", "error");
+    }
+  });
+
+  if (unlocked) unlock();
+})();
+</script>
+</body>
+</html>

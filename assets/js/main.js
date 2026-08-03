@@ -21,7 +21,8 @@ const getUtmParams = () => {
     utm_source: params.get("utm_source") || "",
     utm_medium: params.get("utm_medium") || "",
     utm_campaign: params.get("utm_campaign") || "",
-    special_ref: params.get("ref") || params.get("special_ref") || ""
+    special_ref: params.get("ref") || params.get("special_ref") || params.get("special") || "",
+    special_title: params.get("special_title") || ""
   };
 };
 
@@ -533,6 +534,19 @@ document.addEventListener("DOMContentLoaded", () => {
       msg.textContent = text;
       msg.scrollIntoView({ behavior: "smooth", block: "center" });
     };
+    // Prefill from Specials "Inquire now" links
+    const inquire = getUtmParams();
+    if (inquire.special_title || inquire.special_ref) {
+      const messageField = form.querySelector("[name=message]");
+      if (messageField && !messageField.value.trim()) {
+        const label = inquire.special_title || inquire.special_ref;
+        messageField.value = "I'm interested in this special: " + label;
+      }
+      const destField = form.querySelector("[name=destination]");
+      if (destField && !destField.value) {
+        // leave destination for user; special is captured in message + special_ref
+      }
+    }
     const getFormMeta = () => {
       const path = window.location.pathname.toLowerCase();
       if (path.includes("contact")) {
@@ -547,6 +561,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const extras = [];
       if (data.travelers) extras.push("Travelers: " + data.travelers);
       if (data.budget) extras.push("Budget: " + data.budget);
+      if (utm.special_title) extras.push("Special: " + utm.special_title);
+      else if (utm.special_ref) extras.push("Special ref: " + utm.special_ref);
       if (extras.length) message = message ? message + "\n\n" + extras.join("\n") : extras.join("\n");
       return {
         firstName: data.first_name || "",
@@ -560,7 +576,8 @@ document.addEventListener("DOMContentLoaded", () => {
         source,
         lead_source,
         special_ref: utm.special_ref,
-        tags,
+        special_title: utm.special_title,
+        tags: utm.special_ref ? tags.concat(["specials-inquire"]) : tags,
         utm_source: utm.utm_source,
         utm_medium: utm.utm_medium,
         utm_campaign: utm.utm_campaign,

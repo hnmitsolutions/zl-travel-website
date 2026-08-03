@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Travel Specials | ZL Travel Agency</title>
+<meta name="description" content="Exclusive travel deals and limited-time specials handpicked by ZL Travel Agency. Inquire for personalized booking on every promotion.">
+<link rel="icon" href="/logo-header.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.24.0/dist/tabler-icons.min.css">
+<link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body id="top">
+
+<header class="header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="ZL Travel Agency"><img src="/logo-header.png" alt="ZL Travel Agency"></a>
+    <nav class="nav" aria-label="Primary">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="specials.html" class="active">Specials</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn--gold" href="contact.html">Start planning</a>
+      <button class="nav-toggle" aria-label="Menu"><i class="ti ti-menu-2"></i></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero" style="min-height:46vh">
+  <div class="px" data-px="0.12"><img src="/assets/img/caribbean-beach.jpg" alt="Tropical coastline"></div>
+  <div class="container">
+    <div class="page-hero__inner" data-animate>
+      <span class="eyebrow">Limited-time offers</span>
+      <h1>Travel <span class="italic">Specials</span></h1>
+      <p class="lead-p" style="max-width:48ch;margin-top:16px;color:rgba(220,230,239,.85)">Hand-picked deals on resorts, cruises, and vacation packages — with personal guidance on every booking.</p>
+      <div class="crumbs"><a href="index.html">Home</a> / Specials</div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-dark">
+  <div class="container">
+    <div class="specials-notice" data-animate>
+      <i class="ti ti-message-circle" aria-hidden="true"></i>
+      <span><strong>See something you like?</strong> Click Inquire Now on any deal and we’ll reach out personally to walk you through details, answer questions, and get you booked.</span>
+    </div>
+
+    <div class="sec-head text-center" data-animate>
+      <span class="eyebrow center">Current promotions</span>
+      <h2>Featured deals</h2>
+      <p class="lead-p mx-auto" style="margin-left:auto;margin-right:auto">Exclusive rates and seasonal packages curated for ZL Travel clients.</p>
+    </div>
+
+    <div class="specials-grid" id="specialsGrid" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="feature-band">
+  <div class="px" data-px="0.18"><img src="/assets/img/travel-landscape.jpg" alt=""></div>
+  <div class="container" data-animate>
+    <span class="eyebrow center">Don’t see what you need?</span>
+    <h2 style="margin-inline:auto">We can find you a deal</h2>
+    <p class="lead-p mx-auto" style="margin:14px auto 0;max-width:46ch;color:rgba(220,230,239,.8)">Tell us where you want to go and we’ll search for the best available promotions, upgrades, and exclusive rates.</p>
+    <a class="btn btn--gold" href="contact.html" style="margin-top:26px">Start planning <i class="ti ti-arrow-right"></i></a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <img class="logo" src="/logo-header.png" alt="ZL Travel Agency">
+        <p>Based in Ankeny, IA, we design effortless getaways for families across the Des Moines area and beyond — from the Caribbean to the coastlines of Europe.</p>
+      </div>
+      <div><h4>Explore</h4><div class="footer__links">
+        <a href="about.html">About</a><a href="services.html">Services</a><a href="destinations.html">Destinations</a>
+        <a href="specials.html">Specials</a><a href="faqs.html">FAQs</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+      </div></div>
+      <div><h4>Get in touch</h4><div class="footer__links">
+        <a href="tel:+15154200551"><i class="ti ti-phone"></i>(515) 420-0551</a>
+        <a href="mailto:Sales@ZLTravelAgency.com"><i class="ti ti-mail"></i>Sales@ZLTravelAgency.com</a>
+        <a href="contact.html"><i class="ti ti-message"></i>Contact form</a>
+      </div></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> ZL Travel Agency. All rights reserved.</span>
+      <div class="footer__legal">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms &amp; Conditions</a>
+        <a href="/affiliate">Affiliate Disclosures</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+<script src="/specials/loader.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+(function () {
+  function escapeHtml(str) {
+    return String(str || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function renderSpecials(specials) {
+    const grid = document.getElementById("specialsGrid");
+    if (!grid) return;
+    grid.innerHTML = "";
+
+    if (!specials.length) {
+      grid.innerHTML =
+        '<div class="specials-empty">' +
+          "<h3>New deals coming soon</h3>" +
+          "<p>We’re curating exclusive promotions. Check back soon — or reach out and we’ll find the best available offer for your trip.</p>" +
+          '<a class="btn btn--gold" href="contact.html">Ask about current deals</a>' +
+        "</div>";
+      return;
+    }
+
+    specials.forEach(function (item) {
+      const slug = item.slug || item.id || "special";
+      const title = item.title || "Travel Special";
+      const inquire =
+        "contact.html?special=" +
+        encodeURIComponent(slug) +
+        "&special_title=" +
+        encodeURIComponent(title);
+      const flyerClass = /\.(png|webp)$/i.test(item.image_url || "") ? " flyer" : "";
+      const expires = item.expires
+        ? '<div class="special-card__expires"><i class="ti ti-clock"></i> Expires ' +
+          escapeHtml(item.expires) +
+          "</div>"
+        : "";
+
+      const card = document.createElement("article");
+      card.className = "special-card";
+      card.innerHTML =
+        '<div class="special-card__img' + flyerClass + '">' +
+          (item.image_url
+            ? '<img src="' + escapeHtml(item.image_url) + '" alt="' + escapeHtml(title) + '" loading="lazy">'
+            : "") +
+        "</div>" +
+        '<div class="special-card__body">' +
+          '<span class="special-card__tag">' + escapeHtml(item.tag || "Limited-Time Offer") + "</span>" +
+          "<h3>" + escapeHtml(title) + "</h3>" +
+          "<p>" + escapeHtml(item.description || "") + "</p>" +
+          expires +
+        "</div>" +
+        '<div class="special-card__footer">' +
+          '<a class="btn btn--gold" href="' + escapeHtml(inquire) + '">Inquire now <i class="ti ti-arrow-right"></i></a>' +
+        "</div>";
+      grid.appendChild(card);
+    });
+  }
+
+  if (window.ZLSpecials) ZLSpecials.subscribeSpecials(renderSpecials);
+})();
+</script>
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a5e697fc40835bdcd382f0b" data-source="WEB_USER"></script>
+</body>
+</html>
