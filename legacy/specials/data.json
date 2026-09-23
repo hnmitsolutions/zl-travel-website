@@ -1,0 +1,38 @@
+{
+  "updated_at": "2026-08-03T00:00:00.000Z",
+  "specials": [
+    {
+      "id": "secrets-moxche",
+      "slug": "secrets-moxche",
+      "title": "Secrets Moxché — Playa del Carmen",
+      "description": "Adults-only Unlimited-Luxury® escape with nonstop airfare from Des Moines, transfers, and a 5-night all-inclusive stay. Ask us for current dates and upgrades.",
+      "image_url": "/assets/img/luxury-resort.jpg",
+      "tag": "Adults-only",
+      "expires": "",
+      "active": true,
+      "created_at": "2026-08-03T00:00:00.000Z"
+    },
+    {
+      "id": "island-resort-florida",
+      "slug": "island-resort-florida",
+      "title": "The Island Resort — Fort Walton Beach",
+      "description": "Family favourite on the Florida coast — flights from Des Moines, courtyard-view stay, pools, kids' club, and beach days built in.",
+      "image_url": "/assets/img/florida-beach.jpg",
+      "tag": "Family favourite",
+      "expires": "",
+      "active": true,
+      "created_at": "2026-08-03T00:00:00.000Z"
+    },
+    {
+      "id": "waikiki-marriott",
+      "slug": "waikiki-marriott",
+      "title": "Waikiki Beach Marriott — Honolulu",
+      "description": "Bucket-list Hawaii with ocean-view nights, flights to Honolulu, and time for North Shore adventures. Limited availability — inquire for this season's rates.",
+      "image_url": "/assets/img/hawaii-beach.jpg",
+      "tag": "Bucket list",
+      "expires": "",
+      "active": true,
+      "created_at": "2026-08-03T00:00:00.000Z"
+    }
+  ]
+}

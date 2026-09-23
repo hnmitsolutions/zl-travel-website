@@ -3,8 +3,8 @@
    ========================================================================== */
 
 /* ---- GoHighLevel (GHL) config ------------------------------------------- */
-const GHL_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/msuaI0zMYgN5H5jBXUbY/webhook-trigger/0eQ1fPEuQsmNdei6uNyb";
-const GHL_BOOKING_WEBHOOK_URL = "https://services.leadconnectorhq.com/hooks/msuaI0zMYgN5H5jBXUbY/webhook-trigger/rkeDNZpJwrQNQj0HpvtQ";
+const GHL_WEBHOOK_URL = "REDACTED_LEAD_WEBHOOK";
+const GHL_BOOKING_WEBHOOK_URL = "REDACTED_BOOKING_WEBHOOK";
 const LAST_LEAD_KEY = "lastLeadData";
 const SCROLL_POPUP_KEY = "zl_scroll_popup_shown";
 const BOOKING_TIMEZONE = "America/Chicago";

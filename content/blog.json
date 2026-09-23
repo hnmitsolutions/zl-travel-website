@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Why All-Inclusive Resorts Are a Game Changer for Family Vacations",
+    "excerpt": "If planning every meal, activity, and outing sounds exhausting, an all-inclusive resort might be exactly what your family needs. Here's why it's the ultimate vacation solution for parents who just want to relax and reconnect.",
+    "image": "/assets/img/resort-pool.jpg",
+    "alt": "All-inclusive resort",
+    "featured": true
+  },
+  {
+    "title": "First-Time Cruise? A Family's Guide to Choosing the Right Ship",
+    "excerpt": "Cabins, dining, kids' clubs and shore excursions \u2014 how to pick a cruise everyone will love.",
+    "image": "/assets/img/cruise-sunset.jpg",
+    "alt": "Cruise",
+    "featured": false
+  },
+  {
+    "title": "Europe with Kids: How to See the Highlights Without the Overwhelm",
+    "excerpt": "A realistic approach to pacing, transport and must-sees for a family European adventure.",
+    "image": "/assets/img/european-town.jpg",
+    "alt": "Europe",
+    "featured": false
+  },
+  {
+    "title": "When to Book: A Simple Timeline for Stress-Free Family Travel",
+    "excerpt": "The sweet spot for flights, resorts and deals \u2014 and how far ahead to start planning.",
+    "image": "/assets/img/caribbean-beach.jpg",
+    "alt": "Beach",
+    "featured": false
+  }
+]
