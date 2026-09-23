@@ -17,15 +17,11 @@ function optional(name: string, fallback = ""): string {
 
 /** Values safe to read on the server for outbound integrations. */
 export const serverEnv = {
-  leadWebhookUrl: () => required("GHL_LEAD_WEBHOOK_URL"),
-  bookingWebhookUrl: () => required("GHL_BOOKING_WEBHOOK_URL"),
-  agentWebhookUrl: () => required("GHL_AGENT_WEBHOOK_URL"),
-  mediaUploadUrl: () =>
-    optional(
-      "GHL_MEDIA_UPLOAD_URL",
-      "https://services.leadconnectorhq.com/medias/upload-file",
-    ),
-  mediaToken: () => required("GHL_MEDIA_TOKEN"),
+  leadWebhookUrl: () => required("BACKEND_LEAD_WEBHOOK_URL"),
+  bookingWebhookUrl: () => required("BACKEND_BOOKING_WEBHOOK_URL"),
+  agentWebhookUrl: () => required("BACKEND_AGENT_WEBHOOK_URL"),
+  mediaUploadUrl: () => "https://services.leadconnectorhq.com/medias/upload-file",
+  mediaToken: () => required("BACKEND_MEDIA_TOKEN"),
   agentPin: () => required("AGENT_PIN"),
 };
 

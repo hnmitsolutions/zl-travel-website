@@ -46,14 +46,13 @@ Safe for the browser: site name, phone, email, Calendly, social URLs, chat widge
 
 | Variable | Purpose |
 | --- | --- |
-| `GHL_LEAD_WEBHOOK_URL` | Lead form webhook |
-| `GHL_BOOKING_WEBHOOK_URL` | Appointment booking webhook |
-| `GHL_AGENT_WEBHOOK_URL` | Agent package webhook |
-| `GHL_MEDIA_UPLOAD_URL` | Media upload endpoint |
-| `GHL_MEDIA_TOKEN` | Private integration token |
+| `BACKEND_LEAD_WEBHOOK_URL` | Lead form webhook |
+| `BACKEND_BOOKING_WEBHOOK_URL` | Appointment booking webhook |
+| `BACKEND_AGENT_WEBHOOK_URL` | Agent package webhook |
+| `BACKEND_MEDIA_TOKEN` | Private integration token |
 | `AGENT_PIN` | Shared PIN for `/agent` tools |
 
-Browser code never calls GoHighLevel directly. Forms post to `/api/*`; the server forwards with secrets from env.
+Browser code never calls the backend CRM directly. Forms post to `/api/*`; the server forwards with secrets from env.
 
 ## Project layout
 
@@ -64,7 +63,7 @@ app/api/        Server integration boundaries
 components/     UI + forms
 content/        Legal HTML + FAQs/blog JSON
 data/           Specials JSON
-lib/            Env, auth, GHL helpers, site config
+lib/            Env, auth, backend helpers, site config
 legacy/         Archived static site (reference only)
 public/         Static assets
 styles/         Site CSS
@@ -75,7 +74,7 @@ styles/         Site CSS
 - Webhooks, media token, and agent PIN live only in server env / API routes.
 - Archived `legacy/` files have secrets redacted; do not redeploy `legacy/` as a public site.
 - Agent routes should stay unlisted (`noindex`); PIN is verified server-side with constant-time compare.
-- Rotate GHL tokens/PIN if this repo was previously shared with secrets in static HTML.
+- Rotate backend tokens/PIN if this repo was previously shared with secrets in static HTML.
 
 ## Deploy (Vercel)
 
